@@ -1,0 +1,44 @@
+/* CSI
+ *
+ * /sass/components/single-article.scss - Styles for a single article
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+
+ .single {
+     width: 50.39%;
+     margin: 5em auto;
+    line-height: 1.5;
+ }
+
+ .nav-links a {
+     text-decoration: none;
+ }
+
+ .nav-links {
+     width: 100%;
+     margin: 0 auto;
+ }
+
+ .meta-nav, .post-title {
+     color: $middleColor;
+     text-decoration: none;
+
+ }
+
+ .post-title {
+     display: block;
+ }
+
+ .nav-previous {
+     text-align: right;
+     width: 45%;
+     float:left;
+ }
+
+ .nav-next {
+     text-align: left;
+     width: 45%;
+     float: right;
+ }

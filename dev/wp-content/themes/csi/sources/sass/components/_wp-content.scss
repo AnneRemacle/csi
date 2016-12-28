@@ -1,0 +1,64 @@
+/* CSI
+ *
+ * /sass/components/wp-content.scss - styles for the_content()
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+
+ .article > p {
+     margin-bottom: 1.5em;
+ }
+
+ .article > ul {
+     width: 90%;
+     margin-left: 10%;
+     margin-bottom: 1.5em;
+ }
+
+ .article > ul > li {
+     margin-bottom: .5em;
+     position: relative;
+ }
+
+ .article > ul > li::before {
+     content:'';
+     font-family: 'Fontawesome';
+     position: absolute;
+     top: 0;
+     left: -2%;
+     color: $middleColor;
+     font-size: 1.2em;
+ }
+
+ .article a {
+     color: $middleColor;
+     text-decoration: none;
+ }
+
+ .article a:hover, .article a:active, .article a:focus {
+     text-decoration: underline;
+     cursor: pointer;
+ }
+
+ .article b {
+     font-family: $laborMedium;
+
+ }
+
+
+ .article > h4 {
+     font-size: 1.2em;
+     margin-bottom: 1.2em;
+     margin-top: 1.8em;
+ }
+
+ .alignleft {
+     float: left;
+     margin: .5em 5% 1em 0;
+ }
+
+ .alignright {
+     float: right;
+     margin: .5em 0 1em 5%;
+ }

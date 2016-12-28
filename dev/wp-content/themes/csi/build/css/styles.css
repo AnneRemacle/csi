@@ -1,0 +1,969 @@
+@charset "UTF-8";
+/* CSI
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+/* CSI
+ *
+ * /sass/settings/colors.scss - Color variables
+ *
+ * coded by Anne
+ * started at 10/10/2016
+ */
+/* Espace P
+ *
+ * /sass/settings/fonts.scss - fonts definition
+ *
+ * coded by Anne
+ * started at 10/10/2016
+ */
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../assets/fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"), url("../assets/fonts/montserrat/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratlight';
+  src: url("../assets/fonts/montserrat/montserrat-light-webfont.woff2") format("woff2"), url("../assets/fonts/montserrat/montserrat-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratmedium';
+  src: url("../assets/fonts/montserrat/montserrat-medium-webfont.woff2") format("woff2"), url("../assets/fonts/montserrat/montserrat-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url("../assets/fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("../assets/fonts/montserrat/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratsemibold';
+  src: url("../assets/fonts/montserrat/montserrat-semibold-webfont.woff2") format("woff2"), url("../assets/fonts/montserrat/montserrat-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratthin';
+  src: url("../assets/fonts/montserrat/montserrat-thin-webfont.woff2") format("woff2"), url("../assets/fonts/montserrat/montserrat-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vollkornbold';
+  src: url("../build/assets/fonts/vollkorn/vollkorn-bold-webfont.woff2") format("woff2"), url("../build/assets/fonts/vollkorn/vollkorn-bold-webfont.woff") format("woff"), url("../build/assets/fonts/vollkorn/vollkorn-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vollkornmedium';
+  src: url("../build/assets/fonts/vollkorn/vollkorn-medium-webfont.woff2") format("woff2"), url("../build/assets/fonts/vollkorn/vollkorn-medium-webfont.woff") format("woff"), url("../build/assets/fonts/vollkorn/vollkorn-medium-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vollkornregular';
+  src: url("../build/assets/fonts/vollkorn/vollkorn-regular-webfont.woff2") format("woff2"), url("../build/assets/fonts/vollkorn/vollkorn-regular-webfont.woff") format("woff"), url("../build/assets/fonts/vollkorn/vollkorn-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vollkornsemibold';
+  src: url("../build/assets/fonts/vollkorn/vollkorn-semibold-webfont.woff2") format("woff2"), url("../build/assets/fonts/vollkorn/vollkorn-semibold-webfont.woff") format("woff"), url("../build/assets/fonts/vollkorn/vollkorn-semibold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Portfolio
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+.hidden {
+  display: none;
+}
+
+.sro, .screen-reader-text {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* Espace P
+ *
+ * /sass/generic/meyer-reset.scss - Meyer reset
+ *
+ * coded by Anne
+ * started at 10/10/2016
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Espace P
+ *
+ * /sass/generic/box-sizing.scss - box sizing definition
+ *
+ * coded by Anne
+ * started at 10/10/2016
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* CSI
+ *
+ * /sass/base/home.scss - basic styles
+ *
+ * coded by Anne
+ * started at 10/10/2016
+ */
+html {
+  font-family: "montserratregular", "Corbel", "Lucida Grande", arial, sans-serif;
+  color: #1B201D;
+  line-height: 1.5;
+}
+
+/* CSI
+ *
+ * /sass/components/welcome.scss - Welcome page
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+@-webkit-keyframes bouncing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  56% {
+    transform: translateY(10px);
+  }
+}
+
+@-moz-keyframes bouncing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  56% {
+    transform: translateY(10px);
+  }
+}
+
+@-o-keyframes bouncing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  56% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes bouncing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  56% {
+    transform: translateY(10px);
+  }
+}
+
+.welcome {
+  background: transparent url("../assets/images/hands.jpg") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.welcome__logo {
+  display: block;
+  width: 12%;
+  margin: 0 auto;
+  padding: 5em 0 2em;
+}
+
+.welcome__title {
+  font-family: "vollkornregular", "Palatino", "Georgia", "Hoefler Text", "Times New Roman", "Baskerville", serif;
+  text-align: center;
+  font-size: 2.75em;
+  padding-bottom: 1em;
+}
+
+.welcome__title--second {
+  display: block;
+  margin-top: .5em;
+}
+
+.welcome__punchline {
+  font-family: "vollkornregular", "Palatino", "Georgia", "Hoefler Text", "Times New Roman", "Baskerville", serif;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.welcome__button {
+  display: block;
+  width: 7.875em;
+  height: 7.875em;
+  background: #0A731A;
+  border-radius: 100%;
+  margin: 1em auto;
+  color: white;
+  font-family: "montserratregular", "Corbel", "Lucida Grande", arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 3em;
+}
+
+.welcome__button:after {
+  font-family: 'FontAwesome';
+  display: block;
+  margin-top: .6em;
+  content: '';
+  font-size: 1.5em;
+}
+
+.welcome__button:hover:after {
+  -webkit-animation: bouncing .6s ease-in infinite;
+  /* Safari 4+ */
+  -moz-animation: bouncing .6s ease-in infinite;
+  /* Fx 5+ */
+  -o-animation: bouncing .6s ease-in infinite;
+  /* Opera 12+ */
+  animation: bouncing .6s ease-in infinite;
+  /* IE 10+, Fx 29+ */
+}
+
+/* CSI
+ *
+ * /sass/components/header.scss - styles for header
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+.header {
+  background: #a5cf8F;
+  position: relative;
+  margin-bottom: 10em;
+}
+
+.header__left {
+  width: 10%;
+  margin-left: 10%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header__logo {
+  display: block;
+  width: 80%;
+  padding: .3em 0;
+}
+
+.header__logo--img {
+  display: block;
+  width: 100%;
+}
+
+.header__nav {
+  display: inline-block;
+  vertical-align: middle;
+  padding: .8em 0;
+  width: 70%;
+}
+
+.header__drop--item {
+  color: white;
+}
+
+#menu-header {
+  margin-left: 15%;
+}
+
+#menu-header > .menu-item {
+  display: inline-block;
+  margin-left: 5%;
+  position: relative;
+  cursor: pointer;
+}
+
+#menu-header > .menu-item a:hover, .menu > .menu-item a:active, .menu > .menu-item a:focus {
+  text-decoration: underline;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
+.menu > .menu-item a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1B201D;
+  padding: 3.5em 0;
+}
+
+.sub-menu {
+  display: none;
+  background: rgba(10, 115, 26, 0.8);
+  position: absolute;
+  min-width: 160%;
+  top: 4.8em;
+  left: -25%;
+  font-size: .9em;
+  z-index: 3;
+}
+
+.sub-menu > .menu-item > a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: .8em 1em;
+  text-transform: none;
+}
+
+.sub-menu > .menu-item:hover, .sub-menu > .menu-item:active, .sub-menu > .menu-item:focus {
+  background: rgba(165, 207, 143, 0.4);
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.sub-menu .menu-item + .menu-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.sub-menu::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgba(10, 115, 26, 0.8);
+  position: absolute;
+  top: -10px;
+  left: 42%;
+}
+
+/* CSI
+ *
+ * /sass/components/index.scss - styles for index page
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+.content {
+  width: 50.39%;
+  margin-left: 10%;
+  line-height: 1.6;
+  float: left;
+  position: relative;
+}
+
+.article {
+  margin-bottom: 6em;
+}
+
+.article__title {
+  font-family: "vollkornregular", "Palatino", "Georgia", "Hoefler Text", "Times New Roman", "Baskerville", serif;
+  font-size: 3.5em;
+  line-height: 1.1;
+  margin-bottom: .6em;
+  padding-bottom: .3em;
+  border-bottom: 0.15em solid #a5cf8F;
+}
+
+.article__title--small {
+  display: block;
+  font-size: 0.5em;
+}
+
+/* CSI
+ *
+ * /sass/components/aside.scss - styles for aside element
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+.aside {
+  width: 19.15%;
+  float: right;
+  margin-right: 7%;
+  margin-top: 4.38em;
+}
+
+.aside-top {
+  margin-top: 2.45em;
+  width: 19.15%;
+  float: right;
+  margin-right: 7%;
+  margin-bottom: 5em;
+}
+
+.aside-top__title {
+  font-family: "vollkornregular", "Palatino", "Georgia", "Hoefler Text", "Times New Roman", "Baskerville", serif;
+  font-size: 2.2em;
+  padding-bottom: .2em;
+  border-bottom: 0.15em solid #a5cf8F;
+  margin-bottom: .8em;
+}
+
+.aside__title {
+  font-family: "vollkornregular", "Palatino", "Georgia", "Hoefler Text", "Times New Roman", "Baskerville", serif;
+  font-size: 2.2em;
+  padding-bottom: .2em;
+  border-bottom: 0.15em solid #a5cf8F;
+  margin-bottom: .8em;
+}
+
+.actu {
+  width: 88.97%;
+  margin-bottom: 2em;
+  line-height: 1.5;
+}
+
+.actu__title {
+  display: block;
+  font-family: "montserratbold", "Corbel", "Lucida Grande", arial, sans-serif;
+  font-size: 1.2em;
+  margin-bottom: .6em;
+}
+
+/* CSI
+ *
+ * /sass/components/footer.scss - styles for footer
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+.footer {
+  clear: both;
+  background: #a5cf8F;
+}
+
+.footer__menu {
+  padding: 3em 0;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.footer__coord {
+  background: rgba(10, 115, 26, 0.8);
+  color: white;
+  padding: 5em 0;
+  line-height: 1.6;
+}
+
+.footer__news {
+  padding: 3em 0;
+}
+
+.footer__news--text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5%;
+  margin-left: 16%;
+}
+
+.coord__left {
+  float: left;
+  margin-left: 30%;
+  margin-top: -2em;
+}
+
+.coord__right {
+  float: right;
+  margin-right: 30%;
+  margin-top: -2em;
+}
+
+.menu-footer-container {
+  padding: 3em 0;
+  margin: 0 auto;
+}
+
+#menu-footer {
+  margin-left: 0;
+}
+
+#menu-footer > .menu-item {
+  display: inline-block;
+  width: 8em;
+  height: 8em;
+  padding: 1em;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  text-align: center;
+  vertical-align: middle;
+  transition: border-color .5s ease;
+}
+
+#menu-footer > .menu-item--about::before {
+  content: '';
+}
+
+#menu-footer > .menu-item--pratique::before {
+  content: '';
+}
+
+#menu-footer > .menu-item--garde::before {
+  content: '';
+}
+
+#menu-footer > .menu-item--activite::before {
+  content: '';
+}
+
+#menu-footer > .menu-item--contact::before {
+  content: '';
+}
+
+#menu-footer > .menu-item--links::before {
+  content: '';
+}
+
+#menu-footer > .menu-item::before {
+  font-family: 'FontAwesome';
+  display: block;
+  margin-bottom: .6em;
+  text-align: center;
+  font-size: 2em;
+}
+
+#menu-footer > .menu-item:hover, #menu-footer > .menu-item:focus, #menu-footer > .menu-item:active {
+  border: 1px solid #1B201D;
+}
+
+#menu-footer > .menu-item + .menu-item {
+  margin-left: 5.1%;
+}
+
+.widget_wysija_cont {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+}
+
+.abs-req {
+  display: none;
+}
+
+.wysija-paragraph {
+  width: 80%;
+}
+
+.wysija-paragraph label {
+  display: inline-block;
+}
+
+.wysija-input {
+  width: 80%;
+  height: 2.5em;
+  padding-left: 3%;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.wysija-input:focus {
+  outline: none;
+  border: 1px solid #0A731A;
+}
+
+.wysija-submit {
+  display: inline-block;
+  margin-left: 68%;
+  width: 10%;
+  height: 2.5em;
+  background-color: #638a4f;
+  color: white;
+  border: none;
+  border-radius: 20%;
+  box-shadow: 2px 2px 2px 0 #1B201D;
+}
+
+/* CSI
+ *
+ * /sass/components/wp-content.scss - styles for the_content()
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+.article > p {
+  margin-bottom: 1.5em;
+}
+
+.article > ul {
+  width: 90%;
+  margin-left: 10%;
+  margin-bottom: 1.5em;
+}
+
+.article > ul > li {
+  margin-bottom: .5em;
+  position: relative;
+}
+
+.article > ul > li::before {
+  content: '';
+  font-family: 'Fontawesome';
+  position: absolute;
+  top: 0;
+  left: -2%;
+  color: #0A731A;
+  font-size: 1.2em;
+}
+
+.article a {
+  color: #0A731A;
+  text-decoration: none;
+}
+
+.article a:hover, .article a:active, .article a:focus {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.article b {
+  font-family: "montserratmedium", "Corbel", "Lucida Grande", arial, sans-serif;
+}
+
+.article > h4 {
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+  margin-top: 1.8em;
+}
+
+.alignleft {
+  float: left;
+  margin: .5em 5% 1em 0;
+}
+
+.alignright {
+  float: right;
+  margin: .5em 0 1em 5%;
+}
+
+/* CSI
+ *
+ * /sass/components/content.scss - Styles for content page
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+.map {
+  display: block;
+  width: 100%;
+  height: 35em;
+  margin-top: -10em;
+  z-index: 1;
+}
+
+.contact {
+  width: 40%;
+  margin: -13em auto 0;
+  position: relative;
+  z-index: 3;
+  background: rgba(165, 207, 143, 0.9);
+  padding: 4em 5%;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 8em;
+}
+
+.contact__name {
+  font-family: "vollkornregular", "Palatino", "Georgia", "Hoefler Text", "Times New Roman", "Baskerville", serif;
+  font-size: 2em;
+  margin-bottom: .6em;
+}
+
+.contact__address, .contact__tel, .contact__email {
+  font-size: 1.2em;
+  margin-bottom: .8em;
+}
+
+.contact__email--address {
+  color: #1B201D;
+}
+
+.contact-form {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  margin-bottom: 5em;
+}
+
+label {
+  display: block;
+  margin-bottom: 1.2em;
+}
+
+.wpcf7-text {
+  margin-top: 1.3em;
+  height: 4em;
+  padding: .4em;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.wpcf7-text:focus, .wpcf7-textarea:focus {
+  outline: none;
+  border: 1px solid #a5cf8F;
+  box-shadow: 0 0 1px 1px #a5cf8F;
+}
+
+.wpcf7-textarea {
+  margin-top: 1.3em;
+  padding: .4em;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.wpcf7-submit {
+  display: block;
+  width: 30%;
+  height: 2em;
+  background-color: #0A731A;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.wpcf7-submit:hover {
+  background-color: #a5cf8F;
+  color: #1B201D;
+  transition: .3s ease;
+  box-shadow: 1px 1px 1px 1px #a5cf8F inset;
+}
+
+.wpcf7-submit:active {
+  box-shadow: 1px 1px 1px 1px #0A731A inset;
+}
+
+.wpcf7-not-valid-tip {
+  color: red;
+  font-size: .6em;
+}
+
+.screen-reader-response {
+  display: none;
+}
+
+.wpcf7-validation-errors {
+  color: red;
+  font-size: .8em;
+}
+
+/* CSI
+ *
+ * /sass/components/activities.scss - Styles for activities page
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+.last-activity {
+  margin-bottom: 3em;
+}
+
+.last-activity__title {
+  font-size: 2em;
+  font-family: "vollkornregular", "Palatino", "Georgia", "Hoefler Text", "Times New Roman", "Baskerville", serif;
+  margin-bottom: .5em;
+}
+
+.last-activity__date {
+  color: #0A731A;
+  font-size: 1.2em;
+}
+
+.last-activity__content {
+  line-height: 1.5;
+}
+
+.last-activity__content p {
+  margin-bottom: 1.5em;
+}
+
+.activities {
+  margin-bottom: 5em;
+}
+
+.activities__section {
+  font-size: 2em;
+  font-family: "vollkornregular", "Palatino", "Georgia", "Hoefler Text", "Times New Roman", "Baskerville", serif;
+  margin-bottom: .5em;
+}
+
+.activities__single {
+  margin-bottom: 1.5em;
+}
+
+.activities__title {
+  font-size: 1.3em;
+  font-family: "vollkornregular", "Palatino", "Georgia", "Hoefler Text", "Times New Roman", "Baskerville", serif;
+}
+
+.activities__date {
+  color: #0A731A;
+  margin-bottom: .6em;
+}
+
+.activities__info {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.5;
+  width: 75%;
+}
+
+.activities__all {
+  color: #0A731A;
+  text-decoration: none;
+}
+
+.activities__all:hover, .activities__all:focus, .activities__all:active {
+  text-decoration: underline;
+}
+
+.activities__container {
+  display: inline-block;
+  vertical-align: top;
+  width: 15%;
+  margin-right: 2%;
+  overflow: hidden;
+  height: 10em;
+}
+
+.activities__img {
+  height: 100%;
+}
+
+/* CSI
+ *
+ * /sass/components/single-article.scss - Styles for a single article
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+.single {
+  width: 50.39%;
+  margin: 5em auto;
+  line-height: 1.5;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.nav-links {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.meta-nav, .post-title {
+  color: #0A731A;
+  text-decoration: none;
+}
+
+.post-title {
+  display: block;
+}
+
+.nav-previous {
+  text-align: right;
+  width: 45%;
+  float: left;
+}
+
+.nav-next {
+  text-align: left;
+  width: 45%;
+  float: right;
+}

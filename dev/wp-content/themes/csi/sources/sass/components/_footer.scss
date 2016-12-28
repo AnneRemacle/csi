@@ -1,0 +1,148 @@
+/* CSI
+ *
+ * /sass/components/footer.scss - styles for footer
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+
+.footer {
+	clear: both;
+	background: $lightColor;
+
+	&__menu {
+		padding: 3em 0;
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	&__coord {
+		background: $middleColorAlpha;
+		color: white;
+		padding: 5em 0;
+		line-height: 1.6;
+	}
+
+	&__news {
+		padding: 3em 0;
+		&--text {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 5%;
+			margin-left: 16%;
+		}
+	}
+}
+
+.coord {
+
+	&__left {
+		float: left;
+		margin-left: 30%;
+		margin-top: -2em;
+	}
+
+	&__right{
+		float: right;
+		margin-right: 30%;
+		margin-top: -2em;
+	}
+}
+
+.menu-footer-container {
+	padding: 3em 0;
+	margin: 0 auto;
+}
+#menu-footer {
+	margin-left: 0;
+}
+#menu-footer > .menu-item {
+	display: inline-block;
+	width: 8em;
+	height: 8em;
+	padding: 1em;
+	border: 1px solid transparent;
+	border-radius: 100%;
+	text-align: center;
+	vertical-align: middle;
+	transition: border-color .5s ease;
+
+	&--about::before {
+		content:'';
+
+	}
+	&--pratique::before {
+		content:'';
+	}
+	&--garde::before {
+		content:'';
+	}
+	&--activite::before {
+		content:'';
+	}
+	&--contact::before {
+		content:'';
+	}
+	&--links::before {
+		content:'';
+	}
+}
+
+#menu-footer > .menu-item::before {
+	font-family: 'FontAwesome';
+	display: block;
+	margin-bottom: .6em;
+	text-align: center;
+	font-size: 2em;
+}
+
+#menu-footer > .menu-item:hover, #menu-footer > .menu-item:focus, #menu-footer > .menu-item:active {
+	border: 1px solid $textColor;
+}
+
+#menu-footer > .menu-item + .menu-item {
+	margin-left: 5.1%;
+}
+
+.widget_wysija_cont {
+	display: inline-block;
+	vertical-align: middle;
+	width: 30%;
+}
+
+.abs-req {
+	display: none;
+}
+
+.wysija-paragraph {
+	width: 80%;
+}
+
+.wysija-paragraph label {
+	display: inline-block;
+}
+
+.wysija-input {
+	width: 80%;
+	height: 2.5em;
+	padding-left: 3%;
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+.wysija-input:focus {
+	outline: none;
+	border: 1px solid $middleColor;
+}
+
+.wysija-submit {
+	display: inline-block;
+	margin-left: 68%;
+	width: 10%;
+	height: 2.5em;
+	background-color: $darkColor;
+	color: white;
+	border: none;
+	border-radius: 20%;
+	box-shadow: 2px 2px 2px 0 $textColor;
+}

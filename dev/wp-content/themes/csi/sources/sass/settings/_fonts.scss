@@ -1,0 +1,111 @@
+/* Espace P
+ *
+ * /sass/settings/fonts.scss - fonts definition
+ *
+ * coded by Anne
+ * started at 10/10/2016
+ */
+
+// import Montserrat
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../assets/fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/montserrat/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../assets/fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/montserrat/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('../assets/fonts/montserrat/montserrat-medium-webfont.woff2') format('woff2'),
+         url('../assets/fonts/montserrat/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../assets/fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratsemibold';
+    src: url('../assets/fonts/montserrat/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/montserrat/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratthin';
+    src: url('../assets/fonts/montserrat/montserrat-thin-webfont.woff2') format('woff2'),
+         url('../assets/fonts/montserrat/montserrat-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// import Vollkorn
+
+@font-face {
+    font-family: 'vollkornbold';
+    src: url('../build/assets/fonts/vollkorn/vollkorn-bold-webfont.woff2') format('woff2'),
+         url('../build/assets/fonts/vollkorn/vollkorn-bold-webfont.woff') format('woff'),
+         url('../build/assets/fonts/vollkorn/vollkorn-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vollkornmedium';
+    src: url('../build/assets/fonts/vollkorn/vollkorn-medium-webfont.woff2') format('woff2'),
+         url('../build/assets/fonts/vollkorn/vollkorn-medium-webfont.woff') format('woff'),
+         url('../build/assets/fonts/vollkorn/vollkorn-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vollkornregular';
+    src: url('../build/assets/fonts/vollkorn/vollkorn-regular-webfont.woff2') format('woff2'),
+         url('../build/assets/fonts/vollkorn/vollkorn-regular-webfont.woff') format('woff'),
+         url('../build/assets/fonts/vollkorn/vollkorn-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vollkornsemibold';
+    src: url('../build/assets/fonts/vollkorn/vollkorn-semibold-webfont.woff2') format('woff2'),
+         url('../build/assets/fonts/vollkorn/vollkorn-semibold-webfont.woff') format('woff'),
+         url('../build/assets/fonts/vollkorn/vollkorn-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// stacks
+$laborText: "montserratregular", "Corbel", "Lucida Grande", arial, sans-serif;
+$laborMedium: "montserratmedium", "Corbel", "Lucida Grande", arial, sans-serif;
+$laborBold: "montserratbold", "Corbel", "Lucida Grande", arial, sans-serif;
+
+$title: "vollkornregular", "Palatino", "Georgia", "Hoefler Text", "Times New Roman", "Baskerville", serif;

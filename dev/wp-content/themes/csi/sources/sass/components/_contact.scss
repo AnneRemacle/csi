@@ -1,0 +1,119 @@
+/* CSI
+ *
+ * /sass/components/content.scss - Styles for content page
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+
+ .map {
+     display: block;
+     width: 100%;
+     height: 35em;
+    margin-top: -10em;
+     z-index: 1;
+ }
+
+.contact {
+    width: 40%;
+    margin: -13em auto 0;
+    position: relative;
+    z-index: 3;
+    background: rgba( $lightColor, .9 );
+    padding: 4em 5%;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 8em;
+
+    &__name {
+        font-family: $title;
+        font-size: 2em;
+        margin-bottom: .6em;
+    }
+    &__address, &__tel, &__email {
+        font-size: 1.2em;
+        margin-bottom: .8em;
+    }
+    &__email {
+        &--address {
+            color: $textColor;
+        }
+    }
+}
+
+.contact-form {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    margin-bottom: 5em;
+}
+
+.wpcf7-form-control {
+
+}
+
+label {
+    display: block;
+    margin-bottom: 1.2em;
+}
+
+.wpcf7-text {
+    margin-top: 1.3em;
+    height: 4em;
+    padding: .4em;
+    width: 100%;
+    border-radius: 10px;
+    border:1px solid grey;
+}
+
+.wpcf7-text:focus, .wpcf7-textarea:focus {
+    outline: none;
+    border: 1px solid $lightColor;
+    box-shadow: 0 0 1px 1px $lightColor;
+}
+
+.wpcf7-textarea {
+    margin-top: 1.3em;
+    padding: .4em;
+    width: 100%;
+    border-radius: 10px;
+    border:1px solid grey;
+}
+
+.wpcf7-submit {
+    display: block;
+    width: 30%;
+    height: 2em;
+    background-color: $middleColor;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.wpcf7-submit:hover {
+    background-color: $lightColor;
+    color: $textColor;
+    transition: .3s ease;
+    box-shadow: 1px 1px 1px 1px $lightColor inset;
+}
+
+.wpcf7-submit:active {
+    box-shadow: 1px 1px 1px 1px $middleColor inset;
+}
+
+.wpcf7-not-valid-tip {
+    color: red;
+    font-size: .6em;
+}
+
+.screen-reader-response {
+    display: none;
+}
+
+.wpcf7-validation-errors {
+    color: red;
+    font-size: .8em;
+}

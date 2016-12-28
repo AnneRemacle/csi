@@ -1,0 +1,31 @@
+/* CSI
+ *
+ * /sass/components/index.scss - styles for index page
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+
+.content {
+	width: 50.39%;
+	margin-left: 10%;
+	line-height: 1.6;
+	float: left;
+	position: relative;
+}
+
+.article {
+	margin-bottom: 6em;
+	&__title {
+		font-family: $title;
+		font-size: 3.5em;
+		line-height: 1.1;
+		margin-bottom: .6em;
+		padding-bottom: .3em;
+		border-bottom: .15em solid $lightColor;
+		&--small {
+			display: block;
+			font-size: 0.5em;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+/* CSI
+ *
+ * /sass/components/activities.scss - Styles for activities page
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+
+.last-activity {
+    margin-bottom: 3em;
+    &__title {
+        font-size: 2em;
+        font-family: $title;
+        margin-bottom: .5em;
+    }
+    &__date {
+        color: $middleColor;
+        font-size: 1.2em;
+    }
+    &__content {
+        line-height: 1.5;
+    }
+    &__content p {
+        margin-bottom: 1.5em;
+    }
+}
+
+.activities {
+    margin-bottom: 5em;
+    &__section {
+        font-size: 2em;
+        font-family: $title;
+        margin-bottom: .5em;
+    }
+    &__single {
+        margin-bottom: 1.5em;
+    }
+    &__title {
+        font-size: 1.3em;
+        font-family: $title;
+    }
+    &__date {
+        color: $middleColor;
+        margin-bottom: .6em;
+    }
+    &__info {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1.5;
+        width: 75%;
+    }
+    &__all {
+        color: $middleColor;
+        text-decoration: none;
+    }
+    &__all:hover, &__all:focus, &__all:active {
+        text-decoration: underline;
+    }
+    &__container {
+        display: inline-block;
+        vertical-align: top;
+        width: 15%;
+        margin-right: 2%;
+        overflow: hidden;
+        height: 10em;
+    }
+    &__img {
+        height: 100%;
+    }
+}
