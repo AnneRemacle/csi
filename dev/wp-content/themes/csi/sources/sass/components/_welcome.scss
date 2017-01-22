@@ -41,8 +41,8 @@
 
 .welcome {
 	background: transparent url("../assets/images/hands.jpg") center no-repeat;
-  background-size: cover;
-	height: 100vh;
+    background-size: cover;
+    min-height: 100vh;
 
 	&__logo {
 		display: block;

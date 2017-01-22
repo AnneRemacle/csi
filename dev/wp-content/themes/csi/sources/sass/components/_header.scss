@@ -10,6 +10,7 @@
 	background: $lightColor;
 	position: relative;
 	margin-bottom: 10em;
+	margin-top: -1em;
 
 	&__left {
 		width: 10%;
@@ -71,7 +72,7 @@
 
 .sub-menu {
 	display: none;
-	background: $middleColorAlpha;
+	background: $middleColor;
 	position: absolute;
 	min-width: 160%;
 	top: 4.8em;
@@ -106,9 +107,77 @@
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 
-	border-bottom: 10px solid $middleColorAlpha;
+	border-bottom: 10px solid $middleColor;
 	position: absolute;
 	top: -10px;
 	left: 42%;
 
+}
+
+@media screen and (max-width: 1185px) {
+	.header {
+		&__logo {
+			padding: .5em 0;
+		}
+
+		&__nav {
+			width: 75%;
+		}
+	}
+}
+@media screen and (max-width: 1106px) {
+	#menu-header {
+		margin-left: 5%;
+	}
+}
+@media screen and (max-width: 990px) {
+	#menu-header {
+		margin-left: 0;
+	}
+	#menu-header > .menu-item {
+		margin-left: 5%;
+	}
+}
+@media screen and (max-width: 940px) {
+	#menu-header > .menu-item {
+		margin-left: 3%;
+	}
+}
+@media screen and (max-width: 805px) {
+	#menu-header > .menu-item {
+		font-size: .9em;
+	}
+}
+@media screen and (max-width: 726px) {
+	.header {
+		&__logo {
+			width: 100%;
+		}
+	}
+	#menu-header > .menu-item {
+		width: 25%;
+		text-align: center;
+	}
+	.menu > .menu-item {
+		margin: 1em 0;
+	}
+	.menu > .menu-item a {
+		padding: 1em 0;
+	}
+	.sub-menu {
+		top: 3em;
+		left: -25%;
+	}
+}
+@media screen and (max-width: 535px) {
+	.header {
+		&__nav {
+			font-size: .8em;
+		}
+	}
+}
+@media screen and (max-width: 425px) {
+	.menu > .menu-item {
+		width: 28%;
+	}
 }

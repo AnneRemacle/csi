@@ -254,7 +254,7 @@ html {
 .welcome {
   background: transparent url("../assets/images/hands.jpg") center no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .welcome__logo {
@@ -327,6 +327,7 @@ html {
   background: #a5cf8F;
   position: relative;
   margin-bottom: 10em;
+  margin-top: -1em;
 }
 
 .header__left {
@@ -388,7 +389,7 @@ html {
 
 .sub-menu {
   display: none;
-  background: rgba(10, 115, 26, 0.8);
+  background: #0A731A;
   position: absolute;
   min-width: 160%;
   top: 4.8em;
@@ -422,10 +423,78 @@ html {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid rgba(10, 115, 26, 0.8);
+  border-bottom: 10px solid #0A731A;
   position: absolute;
   top: -10px;
   left: 42%;
+}
+
+@media screen and (max-width: 1185px) {
+  .header__logo {
+    padding: .5em 0;
+  }
+  .header__nav {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1106px) {
+  #menu-header {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #menu-header {
+    margin-left: 0;
+  }
+  #menu-header > .menu-item {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  #menu-header > .menu-item {
+    margin-left: 3%;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  #menu-header > .menu-item {
+    font-size: .9em;
+  }
+}
+
+@media screen and (max-width: 726px) {
+  .header__logo {
+    width: 100%;
+  }
+  #menu-header > .menu-item {
+    width: 25%;
+    text-align: center;
+  }
+  .menu > .menu-item {
+    margin: 1em 0;
+  }
+  .menu > .menu-item a {
+    padding: 1em 0;
+  }
+  .sub-menu {
+    top: 3em;
+    left: -25%;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .header__nav {
+    font-size: .8em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .menu > .menu-item {
+    width: 28%;
+  }
 }
 
 /* CSI
