@@ -75,6 +75,16 @@
 			border: none;
 		}
 	}
+	.aside-top {
+		float: none;
+		width: 100%;
+		padding: 3em 10%;
+		margin-top: -10em;
+		background: rgba( $lightColor, 0.3 );
+		&__title {
+			border: none;
+		}
+	}
 	.actu {
 		display: inline-block;
 		width: 45%;

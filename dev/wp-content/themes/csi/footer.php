@@ -49,10 +49,12 @@
 		<!--End mc_embed_signup-->
 	</div>
 </footer>
+<div class="content__hide"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClfGzs3JWygOHF-J3GQqJke__tElojigQ"></script>
 
 </script>
 
 </script>
+</div> <!--End container -->
 </body>
 </html>

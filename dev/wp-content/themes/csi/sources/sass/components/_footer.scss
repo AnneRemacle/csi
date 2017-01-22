@@ -255,6 +255,13 @@
 	}
 
 }
+@media screen and (max-width: 768px) {
+	.footer {
+		.menu > .menu-item a {
+			padding-left: 0;
+		}
+	}
+}
 @media screen and (max-width: 750px) {
 	#menu-footer {
 		padding-left: 4%;
@@ -346,5 +353,10 @@
 	}
 	#menu-footer > .menu-item + .menu-item {
 		margin-left: 3%;
+	}
+	.footer {
+		&__button {
+			width: 15%;
+		}
 	}
 }

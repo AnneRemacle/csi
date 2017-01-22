@@ -30,7 +30,7 @@
 		<script src="<?php echo get_template_directory_uri() . '/build/script/script.js';?>"></script>
 	</head>
 	<body>
-
+		<div class="container">
 		<?php if(is_front_page()): ?>
 			 <div class="welcome">
 			 	<img class="welcome__logo" src="<?php echo get_template_directory_uri() . '/build/assets/images/logo-csi-bicolore.png';?>" alt="Logo du Centre de Santé Intégré d'Angleur">
@@ -44,7 +44,6 @@
 
 			 	<a href="#header" class="welcome__button">
 			 		Cliquez ici <br>
-			 		<!-- <i class="welcome__button--icon fa fa-arrow-down"></i> -->
 			 	</a>
 			 </div>
 		<?php endif; ?>
@@ -60,8 +59,10 @@
 				</h1>
 			</div>
 
-			<nav class="header__nav">
+			<nav id="header-nav" class="header__nav">
 				<h2 class="sro">Navigation principale du site du Centre de Santé Intégré d'Angleur</h2>
+				<a href="#header-nav" class="header__btn header__burger"><i class="fa fa-bars"></i></a>
+				<a href="#header" class="header__btn header__close"><i class="fa fa-times"></i></a>
 				<?php wp_nav_menu( array(
 					'menu' => "header",
 					'theme-location' => 'header' ) ); ?>

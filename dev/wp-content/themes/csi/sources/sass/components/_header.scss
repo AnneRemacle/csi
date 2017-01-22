@@ -5,7 +5,9 @@
  * coded by Anne
  * started at 29/11/2016
  */
-
+.container {
+	overflow: hidden;
+}
 .header {
 	background: $lightColor;
 	position: relative;
@@ -148,36 +150,135 @@
 		font-size: .9em;
 	}
 }
-@media screen and (max-width: 726px) {
+@media screen and (max-width: 768px) { // TODO
 	.header {
 		&__logo {
 			width: 100%;
 		}
-	}
-	#menu-header > .menu-item {
-		width: 25%;
-		text-align: center;
-	}
-	.menu > .menu-item {
-		margin: 1em 0;
-	}
-	.menu > .menu-item a {
-		padding: 1em 0;
-	}
-	.sub-menu {
-		top: 3em;
-		left: -25%;
-	}
-}
-@media screen and (max-width: 535px) {
-	.header {
 		&__nav {
-			font-size: .8em;
+
+		}
+		&__drop {
+			&--item {
+				color:white;
+			}
+		}
+		&__btn {
+			color: $textColor;
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-size: 2em;
+			padding: 1em;
+			text-align: center;
+			cursor: pointer;
+		}
+		&__close {
+			visibility: hidden;
+		    -webkit-transition: transform .1s ease-in;
+		}
+		&__burger {
+		    -webkit-transition: transform .1s ease-in;
 		}
 	}
+	#menu-header {
+		margin-left: 0;
+		background: $lightColor;
+		z-index:3;
+		min-height: 100vh;
+		margin-top: 6em;
+	}
+
+	#menu-header > .menu-item {
+		display: block;
+		margin-left: 0;
+		position: relative;
+		cursor: pointer;
+		padding: 2em 0;
+
+
+	}
+	#menu-header > .menu-item + .menu-item {
+		border-top: 1px solid $textColor;
+	}
+
+	#menu-header > .menu-item a:hover, .menu > .menu-item a:active, .menu > .menu-item a:focus {
+		text-decoration: underline;
+		transition: .3s ease;
+		cursor: pointer;
+	}
+
+	.menu-item-has-children:hover .sub-menu {
+		display: block;
+	}
+
+	.menu > .menu-item a {
+		padding-left: 15%;
+	}
+
+	.sub-menu {
+		display: block;
+		background: transparent;
+		position: relative;
+		min-width: 100%;
+		max-width: 100%;
+		top: 0;
+		left: 0;
+		margin-bottom: -1em;
+	}
+
+	.sub-menu > .menu-item > a {
+		color: $textColor;
+		text-transform: none;
+		padding: 2em 0 2em 25%;
+		text-align: left;
+		font-size: 1.1em;
+	}
+
+	.sub-menu > .menu-item:hover, .sub-menu > .menu-item:active, .sub-menu > .menu-item:focus {
+		text-decoration: underline;
+		transition: .3s ease;
+		cursor: pointer;
+	}
+
+	.sub-menu .menu-item + .menu-item {
+		border-top: 1px solid rgba(255, 255, 255, 0.6);
+	}
+
+	.sub-menu::before {
+		display: none;
+	}
 }
-@media screen and (max-width: 425px) {
-	.menu > .menu-item {
-		width: 28%;
+
+@media only screen and (max-width: 768px) {
+	#menu-header {
+		position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    right: 0;
+	    width: 250px;
+	    transform: translateX(250px);
+	    -webkit-transition: transform .3s ease-in;
+		background: rgba( $lightColor, 0.8 );
+
+	}
+	.header__nav:target {
+		#menu-header{
+			transform: translateX(0);
+		}
+		.header__burger {
+			display: none;
+		}
+		.header__close {
+			visibility: visible;
+			z-index: 100;
+			font-size: 2em;
+		}
+
+	}
+	.header {
+		&__nav {
+			padding: 3em 0;
+		}
 	}
 }

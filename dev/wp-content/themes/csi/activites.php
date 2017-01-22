@@ -6,6 +6,8 @@
 get_header();
  ?>
 
+  <?php get_template_part( 'aside' ); ?>
+
  <section class="content clearfix">
  	<h2 class="sro">contenu principal du site</h2>
 
@@ -73,7 +75,7 @@ get_header();
 
  </section>
 
- <?php get_template_part( 'aside' ); ?>
+
 
  <?php
  	get_footer();
