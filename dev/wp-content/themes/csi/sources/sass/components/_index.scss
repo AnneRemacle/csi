@@ -29,3 +29,33 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1058px) {
+	.content {
+		float: none;
+		width: 80%;
+		margin: 5em auto;
+	}
+}
+@media screen and (max-width: 666px) {
+	.article {
+		&__title {
+			font-size: 3em;
+		}
+	}
+}
+@media screen and (max-width: 575px) {
+	.article {
+		font-size: .95em;
+		&__title {
+			font-size: 2.8em;
+		}
+	}
+}
+@media screen and (max-width: 506px) {
+	.article {
+		&__title {
+			font-size: 2.5em;
+		}
+	}
+}

@@ -575,6 +575,35 @@ html {
   font-size: 0.5em;
 }
 
+@media screen and (max-width: 1058px) {
+  .content {
+    float: none;
+    width: 80%;
+    margin: 5em auto;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .article__title {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .article {
+    font-size: .95em;
+  }
+  .article__title {
+    font-size: 2.8em;
+  }
+}
+
+@media screen and (max-width: 506px) {
+  .article__title {
+    font-size: 2.5em;
+  }
+}
+
 /* CSI
  *
  * /sass/components/aside.scss - styles for aside element
@@ -624,6 +653,45 @@ html {
   font-family: "montserratbold", "Corbel", "Lucida Grande", arial, sans-serif;
   font-size: 1.2em;
   margin-bottom: .6em;
+}
+
+@media screen and (max-width: 1140px) {
+  .aside {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1088px) {
+  .actu {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1058px) {
+  .aside {
+    float: none;
+    width: 100%;
+    padding: 3em 10%;
+    margin-top: -10em;
+    background: rgba(165, 207, 143, 0.3);
+  }
+  .aside__title {
+    border: none;
+  }
+  .actu {
+    display: inline-block;
+    width: 45%;
+    margin-right: 3%;
+    vertical-align: top;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .actu {
+    width: 80%;
+    margin-right: 0;
+    margin-left: 10%;
+  }
 }
 
 /* CSI

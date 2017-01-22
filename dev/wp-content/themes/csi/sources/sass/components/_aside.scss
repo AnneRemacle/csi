@@ -53,3 +53,39 @@
 
 	}
 }
+
+@media screen and (max-width: 1140px) {
+	.aside {
+		width: 20%;
+	}
+}
+@media screen and (max-width: 1088px) {
+	.actu {
+		width: 95%;
+	}
+}
+@media screen and (max-width: 1058px) {
+	.aside {
+		float: none;
+		width: 100%;
+		padding: 3em 10%;
+		margin-top: -10em;
+		background: rgba( $lightColor, 0.3 );
+		&__title {
+			border: none;
+		}
+	}
+	.actu {
+		display: inline-block;
+		width: 45%;
+		margin-right: 3%;
+		vertical-align: top;
+	}
+}
+@media screen and (max-width: 690px) {
+	.actu {
+		width: 80%;
+		margin-right: 0;
+		margin-left: 10%;
+	}
+}
