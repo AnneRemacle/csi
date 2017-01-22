@@ -316,6 +316,51 @@ html {
   /* IE 10+, Fx 29+ */
 }
 
+@media screen and (max-width: 768px) {
+  .welcome__logo {
+    width: 15%;
+    padding: 5em 0 1.5em;
+  }
+  .welcome__title {
+    font-size: 2.2em;
+  }
+  .welcome__punchline {
+    font-size: 1.8em;
+  }
+  .welcome__button {
+    width: 7em;
+    height: 7em;
+    padding-top: 2.5em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .welcome__logo {
+    width: 20%;
+  }
+  .welcome__title {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .welcome__logo {
+    width: 25%;
+  }
+  .welcome__title {
+    font-size: 1.8em;
+  }
+  .welcome__punchline {
+    font-size: 1.6em;
+  }
+  .welcome__button {
+    width: 7em;
+    height: 7em;
+    padding-top: 2.5em;
+    font-size: .9em;
+  }
+}
+
 /* CSI
  *
  * /sass/components/header.scss - styles for header
