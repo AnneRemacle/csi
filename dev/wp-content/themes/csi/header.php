@@ -25,11 +25,11 @@
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/build/css/styles.css'; ?>?v=0.5">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/build/assets/fonts/font-awesome/css/font-awesome.min.css'; ?>?v=0.5">
 
-		
+
 	</head>
 	<body>
 		<div class="container">
-		<?php if(is_front_page()): ?>
+		<!-- <?php if(is_front_page()): ?>
 			 <div class="welcome">
 			 	<img class="welcome__logo" src="<?php echo get_template_directory_uri() . '/build/assets/images/logo-csi-bicolore.png';?>" alt="Logo du Centre de Santé Intégré d'Angleur">
 			 	<p class="welcome__title">
@@ -44,13 +44,13 @@
 			 		Cliquez ici <br>
 			 	</a>
 			 </div>
-		<?php endif; ?>
+		<?php endif; ?> -->
 
 
 		<header class="header" id="header">
 			<div class="header__left">
 				<a href="<?php echo get_home_url(); ?>" class="header__logo">
-					<img src="<?php echo get_template_directory_uri() . '/build/assets/images/logo-csi-bicolore.png';?>" alt="Logo du Centre de Santé Intégré d'Angleur" class="header__logo--img">
+					<img src="<?php echo get_template_directory_uri() . '/build/assets/images/logo-csi.png';?>" alt="Logo du Centre de Santé Intégré d'Angleur" class="header__logo--img">
 				</a>
 				<h1 class="sro">
 					Centre de Santé Intégré d'Angleur
