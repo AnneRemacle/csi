@@ -257,15 +257,12 @@
 }
 @media screen and (max-width: 768px) {
 	.footer {
-		.menu > .menu-item a {
-			padding-left: 0;
+		&__menu {
+			display: none;
 		}
 	}
 }
 @media screen and (max-width: 750px) {
-	#menu-footer {
-		padding-left: 4%;
-	}
 	.coord {
 		&__left {
 			margin-left: 15%;
@@ -275,11 +272,6 @@
 		}
 	}
 
-}
-@media screen and (max-width: 650px) {
-	#menu-footer {
-		padding-left: 0;
-	}
 }
 @media screen and (max-width: 600px) {
 	.footer {
@@ -308,25 +300,8 @@
 		width: 70%;
 	}
 }
-@media screen and (max-width: 565px) {
-	.footer {
-		&__menu {
-			width: 85%;
-		}
-	}
-	#menu-footer > .menu-item {
-		margin-left: 7%;
-	}
-	#menu-footer > .menu-item + .menu-item {
-		margin-left: 7%;
-	}
-}
 @media screen and (max-width: 471px) {
-	.footer {
-		&__menu {
-			width: 90%;
-		}
-	}
+
 	.coord {
 		&__left, &__right {
 			margin: 0 0 1em 25%;
@@ -339,21 +314,7 @@
 		width: 75%;
 	}
 }
-@media screen and (max-width: 445px) {
-	#menu-footer > .menu-item {
-		margin-left: 5%;
-	}
-	#menu-footer > .menu-item + .menu-item {
-		margin-left: 5%;
-	}
-}
 @media screen and (max-width: 414px) {
-	#menu-footer > .menu-item {
-		margin-left: 3%;
-	}
-	#menu-footer > .menu-item + .menu-item {
-		margin-left: 3%;
-	}
 	.footer {
 		&__button {
 			width: 15%;

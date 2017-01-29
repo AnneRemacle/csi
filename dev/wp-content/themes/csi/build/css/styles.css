@@ -505,7 +505,8 @@ html {
   .header__btn {
     display: block;
     color: #30332F;
-    position: absolute;
+    background: #E5F1E5;
+    position: fixed;
     top: 0;
     right: 0;
     font-size: 2em;
@@ -1025,26 +1026,17 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-  .footer .menu > .menu-item a {
-    padding-left: 0;
+  .footer__menu {
+    display: none;
   }
 }
 
 @media screen and (max-width: 750px) {
-  #menu-footer {
-    padding-left: 4%;
-  }
   .coord__left {
     margin-left: 15%;
   }
   .coord__right {
     margin-right: 15%;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  #menu-footer {
-    padding-left: 0;
   }
 }
 
@@ -1072,22 +1064,7 @@ html {
   }
 }
 
-@media screen and (max-width: 565px) {
-  .footer__menu {
-    width: 85%;
-  }
-  #menu-footer > .menu-item {
-    margin-left: 7%;
-  }
-  #menu-footer > .menu-item + .menu-item {
-    margin-left: 7%;
-  }
-}
-
 @media screen and (max-width: 471px) {
-  .footer__menu {
-    width: 90%;
-  }
   .coord__left, .coord__right {
     margin: 0 0 1em 25%;
   }
@@ -1099,22 +1076,7 @@ html {
   }
 }
 
-@media screen and (max-width: 445px) {
-  #menu-footer > .menu-item {
-    margin-left: 5%;
-  }
-  #menu-footer > .menu-item + .menu-item {
-    margin-left: 5%;
-  }
-}
-
 @media screen and (max-width: 414px) {
-  #menu-footer > .menu-item {
-    margin-left: 3%;
-  }
-  #menu-footer > .menu-item + .menu-item {
-    margin-left: 3%;
-  }
   .footer__button {
     width: 15%;
   }

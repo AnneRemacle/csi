@@ -187,13 +187,15 @@
 		&__btn {
 			display: block;
 			color: $textColor;
-			position: absolute;
+			background: $lightColor;
+			position: fixed;;
 			top: 0;
 			right: 0;
 			font-size: 2em;
 			padding: 1em;
 			text-align: center;
 			cursor: pointer;
+
 		}
 		&__close {
 			visibility: hidden;
