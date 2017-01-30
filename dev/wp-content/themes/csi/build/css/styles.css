@@ -820,11 +820,15 @@ html {
 .footer__input {
   width: 80%;
   display: inline-block;
-  height: 3em;
+  height: 2em;
   border: none;
   padding: .5em;
   border-radius: 5px;
   border: 1px solid transparent;
+}
+
+.footer__input[placeholder] {
+  font-size: 1em;
 }
 
 .footer__input:focus {

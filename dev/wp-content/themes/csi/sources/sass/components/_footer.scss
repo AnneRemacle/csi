@@ -41,11 +41,14 @@
 	&__input {
 		width: 80%;
 		display: inline-block;
-		height: 3em;
+		height: 2em;
 		border: none;
-		padding: .5em;
+		padding:.5em;
 		border-radius: 5px;
 		border: 1px solid transparent;
+	}
+	&__input[placeholder] {
+		font-size: 1em;
 	}
 	&__input:focus {
 		outline: none;
