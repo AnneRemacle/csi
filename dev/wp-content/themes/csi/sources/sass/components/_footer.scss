@@ -11,29 +11,29 @@
 	background: $lightColor;
 
 	&__menu {
-		padding: 3em 0;
-		width: 75%;
+		width: 80%;
 		margin: 0 auto;
 	}
-
-	&__coord {
+	&__bottom {
 		background: $middleColor;
-		color: white;
-		padding: 5em 0;
-		line-height: 1.6;
+		padding: 3em 10%;
+		display: table;
+	}
+
+	&__column {
+		display: table-cell;
+		vertical-align: middle;
 	}
 
 	&__news {
-		padding: 3em 0;
+		width: 30%;
 		&--text {
-			display: inline-block;
-			vertical-align: middle;
-			margin-right: 5%;
-			margin-left: 16%;
+			display: block;
+			margin-bottom: 1em;
 		}
 	}
 	&__form {
-
+		display: block;
 	}
 	&__label {
 		margin-bottom: .6em;
@@ -59,60 +59,45 @@
 }
 
 #mc_embed_signup {
-	display: inline-block;
-	vertical-align: middle;
-	width: 30%;
+	display: block;
 }
 
 .button {
 	width: 100%;
     height: 3em;
-    background-color: $middleColor;
+    background-color: $darkColor;
     color: white;
-    border: 1px solid $middleColor;
+    border: 1px solid $darkColor;
     border-radius: 5px;
 }
 .button:hover {
-	background-color: $darkColor;
-    border: 1px solid $darkColor;
+	background-color: $secondLightColor;
+    border: 1px solid $secondLightColor;
 }
 
 .coord {
-
-	&__left {
-		float: left;
-		margin-left: 30%;
-		margin-top: -2em;
-	}
-
-	&__right{
-		float: right;
-		margin-right: 30%;
-		margin-top: -2em;
-	}
+	width: 20%;
+	line-height: 1.5;
 }
 
 .menu-footer-container {
-	padding: 3em 0;
+	padding: 2em 0;
 	margin: 0 auto;
 }
 #menu-footer {
 	margin-left: 0;
+	width: 100%;
+	display: table;
 }
 #menu-footer > .menu-item {
-	display: inline-block;
+	display: table-cell;
 	width: 8em;
 	height: 8em;
-	padding: 1em;
-	border: 1px solid transparent;
-	border-radius: 100%;
 	text-align: center;
 	vertical-align: middle;
-	transition: border-color .5s ease;
 
 	&--about::before {
 		content:'';
-
 	}
 	&--pratique::before {
 		content:'';
@@ -140,66 +125,44 @@
 }
 
 #menu-footer > .menu-item:hover, #menu-footer > .menu-item:focus, #menu-footer > .menu-item:active {
-	border: 1px solid $textColor;
+	color: $secondLightColor;
 }
 
-#menu-footer > .menu-item + .menu-item {
-	margin-left: 5.1%;
+#menu-footer > .menu-item a {
+	cursor: pointer;
 }
 
-@media screen and (max-width: 1420px) {
-	#menu-footer > .menu-item {
-		font-size: .9em;
-	}
+#menu-footer > .menu-item a:hover, #menu-footer > .menu-item a:focus, #menu-footer > .menu-item a:active {
+	color: $secondLightColor;
 }
-@media screen and (max-width: 1279px) {
-	.footer {
-		&__menu {
-			width: 80%;
-		}
-	}
-}
+
 @media screen and (max-width: 1200px) {
 	.footer {
-		&__menu {
-			width: 85%;
+		&__bottom {
+			width: 100%;
+		}
+		&__news {
+			display: block;
+			width: 50%;
+			margin: 0 auto;
 		}
 	}
-	#mc_embed_signup {
-		width: 35%;
+	.coord {
+		display: inline-block;
+		width: 49%;
+		vertical-align: middle;
+		text-align: center;
+		margin-bottom: 2em;
+
 	}
+
 }
-@media screen and (max-width: 1129px) {
-	#menu-footer > .menu-item + .menu-item {
-		margin-left: 4%;
-	}
-	#menu-footer {
-		padding-left: 3%;
-	}
-}
+
 @media screen and (max-width: 1084px) {
 	.footer {
 		&__menu {
 			width: 90%;
-			padding: 2em 0;
 		}
-	}
-	#menu-footer > .menu-item + .menu-item {
-		margin-left: 3%;
-	}
-	#menu-footer {
-		padding-left: 5%;
-	}
-	.coord {
-		&__left {
-			margin-left: 25%;
-		}
-		&__right {
-			margin-right: 25%;
-		}
-	}
-	.footer__news--text {
-		margin-left: 10%;
 	}
 }
 @media screen and (max-width: 985px) {
@@ -208,116 +171,28 @@
 			width: 90%;
 			padding: 2em 0;
 		}
-	}
-	#menu-footer {
-		padding-left: 2.5%;
+		&__news {
+			width: 65%;
+		}
 	}
 	#menu-footer > .menu-item {
-		font-size: .8em;
+		font-size: .9em;
 	}
-}
-@media screen and (max-width: 938px) {
-	.footer__news--text {
-		display: block;
-		width: 60%;
-		margin: 0 auto 2em;
-	}
-	#mc_embed_signup {
-		display: block;
-		width: 60%;
-		margin: 0 auto;
-	}
-}
-@media screen and (max-width: 855px) {
-	.footer {
-		&__menu {
-			width: 80%;
-			padding: 1em 0;
-		}
-	}
-	#menu-footer {
-		padding-left: 8%;
-	}
-
-	#menu-footer > .menu-item {
-		margin-left: 10%;
-	}
-	#menu-footer > .menu-item + .menu-item {
-		margin-left: 10%;
-	}
-	.coord {
-		&__left {
-			margin-left: 20%;
-		}
-		&__right {
-			margin-right: 20%;
-		}
-	}
-
 }
 @media screen and (max-width: 768px) {
 	.footer {
 		&__menu {
 			display: none;
 		}
+		&__news {
+			width: 85%;
+		}
 	}
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 552px) {
 	.coord {
-		&__left {
-			margin-left: 15%;
-		}
-		&__right {
-			margin-right: 15%;
-		}
-	}
+		display: block;
+		width: 100%;
 
-}
-@media screen and (max-width: 600px) {
-	.footer {
-		&__coord {
-			padding: 3em 0;
-		}
-	}
-	.coord {
-		&__left {
-			float: none;
-			display: block;
-			width: 100%;
-			margin: 0 0 1em 30%;
-		}
-		&__right {
-			float: none;
-			display: block;
-			width: 100%;
-			margin: 0 0 0 30%;
-		}
-	}
-	.footer__news--text {
-		width: 70%;
-	}
-	#mc_embed_signup {
-		width: 70%;
-	}
-}
-@media screen and (max-width: 471px) {
-
-	.coord {
-		&__left, &__right {
-			margin: 0 0 1em 25%;
-		}
-	}
-	.footer__news--text {
-		width: 75%;
-	}
-	#mc_embed_signup {
-		width: 75%;
-	}
-}
-@media screen and (max-width: 414px) {
-	.footer {
-		&__button {
-			width: 15%;
-		}
 	}
 }
