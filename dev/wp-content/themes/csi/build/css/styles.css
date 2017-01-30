@@ -1204,6 +1204,8 @@ label {
 .activities__title {
   font-size: 1.3em;
   font-family: "montserratlight", "Corbel", "Lucida Grande", arial, sans-serif;
+  text-decoration: none;
+  color: #005C46;
 }
 
 .activities__date {

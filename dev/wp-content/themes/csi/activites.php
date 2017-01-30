@@ -44,12 +44,12 @@ get_header();
                     $posts -> the_post(); ?>
 
                     <li class="activities__single">
-                        <div class="activities__container">
+                        <a href="<?php the_permalink(); ?>" title="Lire plus d'informations sur <?php the_title(); ?>" class="activities__container">
                             <?php $image = get_field('image'); ?>
                             <img src="<?php echo $image['url']; ?>" alt="" class="activities__img">
-                        </div>
+                        </a>
                         <div class="activities__info">
-                            <p class="activities__title"><?php the_title(); ?></p>
+                            <a href="<?php the_permalink(); ?>" title="Lire plus d'informations sur <?php the_title(); ?>" class="activities__title"><?php the_title(); ?></a>
                             <p class="activities__date"><?php the_field('date'); ?></p>
                             <div class="activities__description">
                                 <?php the_activity_excerpt(); ?>…
