@@ -1363,6 +1363,43 @@ label {
   margin-right: 0;
 }
 
-.open {
-  max-height: 10em;
+@media screen and (max-width: 1300px) {
+  .team__member--figure {
+    height: 15em;
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  .team__member {
+    width: 30%;
+  }
+  .team__member--figure {
+    height: 18em;
+  }
+  .team__member:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .team__member--figure {
+    height: 15em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team__member {
+    width: 45%;
+    margin-right: 3%;
+  }
+  .team__member--figure {
+    height: 15em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .team__member {
+    display: block;
+    margin: 0 20% 3em;
+  }
 }
