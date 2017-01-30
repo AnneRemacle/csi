@@ -142,4 +142,18 @@
 
     } );
 
+    $('.team__member--see').click(function () {
+
+		var text = $(this).children('.team__member--schedule');
+
+		if (text.is(':hidden')) {
+			text.slideDown('200');
+
+		} else {
+			text.slideUp('200');
+
+		}
+
+	});
+
 } )();
