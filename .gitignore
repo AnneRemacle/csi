@@ -4,7 +4,9 @@ images/
 logo/
 .DS_Store
 
-**/.sketch
+*/**.sketch
+design
+*/**/.DS_Store
 
 node_modules
 .sass-cache
