@@ -16,8 +16,6 @@
 get_header();
  ?>
 
- <?php get_template_part( 'aside' ); ?>
-
 <section class="content clearfix">
 	<h2 class="sro">Contenu principal du site</h2>
 

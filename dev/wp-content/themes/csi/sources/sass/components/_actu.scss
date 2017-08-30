@@ -1,0 +1,21 @@
+/* CSI
+ *
+ * /sass/components/actu.scss - styles for actu in header
+ *
+ * coded by Anne
+ * started at 30/08/2017
+ */
+
+.actu {
+    &__title {
+        font-family: $mediumText;
+        font-size: 1.2em;
+        display: block;
+        margin-bottom: .9em;
+    }
+    &__text {
+        p {
+            line-height: 1.5;    
+        }
+    }
+}

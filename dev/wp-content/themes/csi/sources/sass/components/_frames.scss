@@ -1,0 +1,48 @@
+/* CSI
+ *
+ * /sass/components/frames.scss - styles for frames in header
+ *
+ * coded by Anne
+ * started at 30/08/2017
+ */
+
+ .frame {
+    display: inline-block;
+    width: 33%;
+    vertical-align: middle;
+    padding: 3em 5.55%;
+    color: white;
+    min-height: 20em;
+    font-family: $regularText;
+
+    &__one {
+        background: $middleColor;
+    }
+    &__two {
+        background: $darkColor;
+    }
+    &__three {
+        background: $ultraDarkColor;
+    }
+
+    &__title {
+        font-size: 1.4em;
+        margin-bottom: 1em;
+        font-family: $lightText;
+    }
+    &__content {
+        &--item {
+            margin-bottom: 1em;
+
+            p {
+                display: inline-block;
+            }
+            i {
+                margin-right: 8px;
+            }
+        }
+        &--more {
+            margin-top: 2em;
+        }
+    }
+ }

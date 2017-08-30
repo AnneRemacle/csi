@@ -9,9 +9,12 @@
 	overflow: hidden;
 }
 .header {
-	background: $lightColor;
 	position: relative;
-	margin-bottom: 10em;
+	margin-bottom: 15em;
+
+	&__up {
+		background: rgba( $lightColor, 0.3 );
+	}
 
 	&__left {
 		width: 7%;
@@ -44,6 +47,12 @@
 	}
 	&__btn {
 		display: none;
+	}
+	&__frames {
+		padding: 0 8.5%;
+		position: absolute;
+		top: 25em;
+		left: 0%;
 	}
 }
 
@@ -105,7 +114,7 @@
 }
 
 .sub-menu > .menu-item:hover, .sub-menu > .menu-item:active, .sub-menu > .menu-item:focus {
-	background: $middleColor;
+	background: $darkColor;
 	transition: .3s ease;
 	cursor: pointer;
 }

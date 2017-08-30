@@ -57,7 +57,7 @@
 			</figure>
 
 			<div class="header__frames">
-				<div class="frame">
+				<div class="frame frame__one">
 					<p class="frame__title">Heures d'ouverture</p>
 					<ul class="frame__content">
 						<?php if( have_rows('heures', 'options') ): ?>
@@ -69,24 +69,22 @@
 						<?php endif; ?>
 					</ul>
 					<div class="frame__content--more"><?php the_field('complement', 'options'); ?></div>
-				</div>
-
-				<div class="frame">
+				</div><!--
+				--><div class="frame frame__two">
 					<p class="frame__title">CSI Angleur</p>
 					<div class="frame__content">
-						<div class="frame__content--address">
+						<div class="frame__content--item">
 							<i class="fa fa-envelope icon"></i><?php the_field('adresse', 'options'); ?>
 						</div>
-						<div class="frame__content--phone">
+						<div class="frame__content--item">
 							<i class="fa fa-phone icon"></i><?php the_field('telephone', 'options'); ?>
 						</div>
-						<div class="frame__content--mail">
+						<div class="frame__content--item">
 							<i class="fa fa-paper-plane icon"></i><?php the_field('email', 'options'); ?>
 						</div>
 					</div>
-
-				</div>
-				<div class="frame">
+				</div><!--
+				--><div class="frame frame__three">
 					<p class="frame__title">Dernières news</p>
 					<?php $posts = new WP_Query( [ 'post_type' => 'actualite', 'number' => 1, 'order' => 'DESC' ] ); ?>
 						<?php if ( $posts -> have_posts() ):

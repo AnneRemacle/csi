@@ -166,157 +166,8 @@ html {
   line-height: 1.5;
 }
 
-/* CSI
- *
- * /sass/components/welcome.scss - Welcome page
- *
- * coded by Anne
- * started at 29/11/2016
- */
-@-webkit-keyframes bouncing {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  56% {
-    transform: translateY(10px);
-  }
-}
-
-@-moz-keyframes bouncing {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  56% {
-    transform: translateY(10px);
-  }
-}
-
-@-o-keyframes bouncing {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  56% {
-    transform: translateY(10px);
-  }
-}
-
-@keyframes bouncing {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  56% {
-    transform: translateY(10px);
-  }
-}
-
-.welcome {
-  background: transparent url("../assets/images/hands.jpg") center no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-}
-
-.welcome__logo {
-  display: block;
-  width: 12%;
-  margin: 0 auto;
-  padding: 5em 0 2em;
-}
-
-.welcome__title {
-  font-family: "montserratlight", "Corbel", "Lucida Grande", arial, sans-serif;
-  text-align: center;
-  font-size: 2.75em;
-  padding-bottom: 1em;
-}
-
-.welcome__title--second {
-  display: block;
-  margin-top: .5em;
-}
-
-.welcome__punchline {
-  font-family: "montserratlight", "Corbel", "Lucida Grande", arial, sans-serif;
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 2em;
-}
-
-.welcome__button {
-  display: block;
-  width: 7.875em;
-  height: 7.875em;
-  background: #4BB69E;
-  border-radius: 100%;
-  margin: 1em auto;
-  color: white;
-  font-family: "montserratregular", "Corbel", "Lucida Grande", arial, sans-serif;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 3em;
-}
-
-.welcome__button:after {
-  font-family: 'FontAwesome';
-  display: block;
-  margin-top: .6em;
-  content: '';
-  font-size: 1.5em;
-}
-
-.welcome__button:hover:after {
-  -webkit-animation: bouncing .6s ease-in infinite;
-  /* Safari 4+ */
-  -moz-animation: bouncing .6s ease-in infinite;
-  /* Fx 5+ */
-  -o-animation: bouncing .6s ease-in infinite;
-  /* Opera 12+ */
-  animation: bouncing .6s ease-in infinite;
-  /* IE 10+, Fx 29+ */
-}
-
-@media screen and (max-width: 768px) {
-  .welcome__logo {
-    width: 15%;
-    padding: 5em 0 1.5em;
-  }
-  .welcome__title {
-    font-size: 2.2em;
-  }
-  .welcome__punchline {
-    font-size: 1.8em;
-  }
-  .welcome__button {
-    width: 7em;
-    height: 7em;
-    padding-top: 2.5em;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .welcome__logo {
-    width: 20%;
-  }
-  .welcome__title {
-    font-size: 2em;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .welcome__logo {
-    width: 25%;
-  }
-  .welcome__title {
-    font-size: 1.8em;
-  }
-  .welcome__punchline {
-    font-size: 1.6em;
-  }
-  .welcome__button {
-    width: 7em;
-    height: 7em;
-    padding-top: 2.5em;
-    font-size: .9em;
-  }
+* {
+  line-height: 1.5;
 }
 
 /* CSI
@@ -331,9 +182,12 @@ html {
 }
 
 .header {
-  background: #E5F1E5;
   position: relative;
-  margin-bottom: 10em;
+  margin-bottom: 15em;
+}
+
+.header__up {
+  background: rgba(103, 207, 184, 0.3);
 }
 
 .header__left {
@@ -370,6 +224,13 @@ html {
   display: none;
 }
 
+.header__frames {
+  padding: 0 8.5%;
+  position: absolute;
+  top: 25em;
+  left: 0%;
+}
+
 #menu-header {
   margin-left: 15%;
 }
@@ -391,7 +252,7 @@ html {
   content: "";
   font-family: "FontAwesome";
   font-size: 1.5em;
-  color: #009875;
+  color: #378F7B;
   display: inline-block;
   margin-top: .2em;
 }
@@ -409,7 +270,7 @@ html {
 
 .sub-menu {
   display: none;
-  background: #009875;
+  background: #378F7B;
   position: absolute;
   min-width: 200px;
   top: 3em;
@@ -428,7 +289,7 @@ html {
 }
 
 .sub-menu > .menu-item:hover, .sub-menu > .menu-item:active, .sub-menu > .menu-item:focus {
-  background: #7FC080;
+  background: #1C6E5C;
   transition: .3s ease;
   cursor: pointer;
 }
@@ -447,7 +308,7 @@ html {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #009875;
+  border-bottom: 10px solid #378F7B;
   position: absolute;
   top: -10px;
   left: 90px;
@@ -497,7 +358,7 @@ html {
     width: 100%;
   }
   .header__nav {
-    background: #E5F1E5;
+    background: #67CFB8;
   }
   .header__drop--item {
     color: white;
@@ -505,7 +366,7 @@ html {
   .header__btn {
     display: block;
     color: #30332F;
-    background: #E5F1E5;
+    background: #67CFB8;
     position: fixed;
     top: 0;
     right: 0;
@@ -523,7 +384,7 @@ html {
   }
   #menu-header {
     margin-left: 0;
-    background: #E5F1E5;
+    background: #67CFB8;
     z-index: 3;
     min-height: 52em;
     margin-top: 6em;
@@ -554,7 +415,7 @@ html {
   }
   .sub-menu {
     display: block;
-    background: #E5F1E5;
+    background: #67CFB8;
     position: relative;
     min-width: 100%;
     max-width: 100%;
@@ -592,7 +453,7 @@ html {
     width: 250px;
     transform: translateX(250px);
     -webkit-transition: transform .3s ease-in;
-    background: #E5F1E5;
+    background: #67CFB8;
   }
   .header__nav:target #menu-header {
     transform: translateX(0);
@@ -635,7 +496,7 @@ html {
   line-height: 1.1;
   margin-bottom: .6em;
   padding-bottom: .3em;
-  border-bottom: 0.15em solid #E5F1E5;
+  border-bottom: 0.15em solid #67CFB8;
 }
 
 .article__title--small {
@@ -674,106 +535,6 @@ html {
 
 /* CSI
  *
- * /sass/components/aside.scss - styles for aside element
- *
- * coded by Anne
- * started at 29/11/2016
- */
-.aside {
-  width: 19.15%;
-  float: right;
-  margin-right: 7%;
-  margin-top: 4.38em;
-}
-
-.aside-top {
-  margin-top: 2.45em;
-  width: 19.15%;
-  float: right;
-  margin-right: 7%;
-  margin-bottom: 5em;
-}
-
-.aside-top__title {
-  font-family: "montserratlight", "Corbel", "Lucida Grande", arial, sans-serif;
-  font-size: 2.2em;
-  padding-bottom: .2em;
-  border-bottom: 0.15em solid #E5F1E5;
-  margin-bottom: .8em;
-}
-
-.aside__title {
-  font-family: "montserratlight", "Corbel", "Lucida Grande", arial, sans-serif;
-  font-size: 2.2em;
-  padding-bottom: .2em;
-  border-bottom: 0.15em solid #E5F1E5;
-  margin-bottom: .8em;
-}
-
-.actu {
-  width: 88.97%;
-  margin-bottom: 2em;
-  line-height: 1.5;
-}
-
-.actu__title {
-  display: block;
-  font-family: "montserratbold", "Corbel", "Lucida Grande", arial, sans-serif;
-  font-size: 1.2em;
-  margin-bottom: .6em;
-}
-
-@media screen and (max-width: 1140px) {
-  .aside {
-    width: 20%;
-  }
-}
-
-@media screen and (max-width: 1088px) {
-  .actu {
-    width: 95%;
-  }
-}
-
-@media screen and (max-width: 1058px) {
-  .aside {
-    float: none;
-    width: 100%;
-    padding: 3em 10%;
-    margin-top: -10em;
-    background: rgba(229, 241, 229, 0.3);
-  }
-  .aside__title {
-    border: none;
-  }
-  .aside-top {
-    float: none;
-    width: 100%;
-    padding: 3em 10%;
-    margin-top: -10em;
-    background: rgba(229, 241, 229, 0.3);
-  }
-  .aside-top__title {
-    border: none;
-  }
-  .actu {
-    display: inline-block;
-    width: 45%;
-    margin-right: 3%;
-    vertical-align: top;
-  }
-}
-
-@media screen and (max-width: 690px) {
-  .actu {
-    width: 80%;
-    margin-right: 0;
-    margin-left: 10%;
-  }
-}
-
-/* CSI
- *
  * /sass/components/footer.scss - styles for footer
  *
  * coded by Anne
@@ -781,7 +542,7 @@ html {
  */
 .footer {
   clear: both;
-  background: #E5F1E5;
+  background: #67CFB8;
 }
 
 .footer__menu {
@@ -790,7 +551,7 @@ html {
 }
 
 .footer__bottom {
-  background: #4BB69E;
+  background: #378F7B;
   padding: 3em 10%;
   display: table;
 }
@@ -833,7 +594,7 @@ html {
 
 .footer__input:focus {
   outline: none;
-  border: 1px solid #4BB69E;
+  border: 1px solid #378F7B;
 }
 
 .footer__button {
@@ -848,15 +609,15 @@ html {
 .button {
   width: 100%;
   height: 3em;
-  background-color: #005C46;
+  background-color: #1C6E5C;
   color: white;
-  border: 1px solid #005C46;
+  border: 1px solid #1C6E5C;
   border-radius: 5px;
 }
 
 .button:hover {
-  background-color: #7FC080;
-  border: 1px solid #7FC080;
+  background-color: #378F7B;
+  border: 1px solid #378F7B;
 }
 
 .coord {
@@ -916,7 +677,7 @@ html {
 }
 
 #menu-footer > .menu-item:hover, #menu-footer > .menu-item:focus, #menu-footer > .menu-item:active {
-  color: #7FC080;
+  color: #378F7B;
 }
 
 #menu-footer > .menu-item a {
@@ -924,7 +685,7 @@ html {
 }
 
 #menu-footer > .menu-item a:hover, #menu-footer > .menu-item a:focus, #menu-footer > .menu-item a:active {
-  color: #7FC080;
+  color: #378F7B;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1008,12 +769,12 @@ html {
   position: absolute;
   top: 0;
   left: -2%;
-  color: #4BB69E;
+  color: #378F7B;
   font-size: 1.2em;
 }
 
 .article a {
-  color: #4BB69E;
+  color: #378F7B;
   text-decoration: none;
 }
 
@@ -1062,7 +823,7 @@ html {
   margin: -13em auto 0;
   position: relative;
   z-index: 3;
-  background: rgba(229, 241, 229, 0.9);
+  background: rgba(103, 207, 184, 0.9);
   padding: 4em 5%;
   text-align: center;
   line-height: 1.5;
@@ -1107,8 +868,8 @@ label {
 
 .wpcf7-text:focus, .wpcf7-textarea:focus {
   outline: none;
-  border: 1px solid #E5F1E5;
-  box-shadow: 0 0 1px 1px #E5F1E5;
+  border: 1px solid #67CFB8;
+  box-shadow: 0 0 1px 1px #67CFB8;
 }
 
 .wpcf7-textarea {
@@ -1123,7 +884,7 @@ label {
   display: block;
   width: 30%;
   height: 2em;
-  background-color: #4BB69E;
+  background-color: #378F7B;
   color: white;
   border: none;
   border-radius: 10px;
@@ -1133,14 +894,14 @@ label {
 }
 
 .wpcf7-submit:hover {
-  background-color: #E5F1E5;
+  background-color: #67CFB8;
   color: #30332F;
   transition: .3s ease;
-  box-shadow: 1px 1px 1px 1px #E5F1E5 inset;
+  box-shadow: 1px 1px 1px 1px #67CFB8 inset;
 }
 
 .wpcf7-submit:active {
-  box-shadow: 1px 1px 1px 1px #4BB69E inset;
+  box-shadow: 1px 1px 1px 1px #378F7B inset;
 }
 
 .wpcf7-not-valid-tip {
@@ -1175,7 +936,7 @@ label {
 }
 
 .last-activity__date {
-  color: #4BB69E;
+  color: #378F7B;
   font-size: 1.2em;
 }
 
@@ -1205,11 +966,11 @@ label {
   font-size: 1.3em;
   font-family: "montserratlight", "Corbel", "Lucida Grande", arial, sans-serif;
   text-decoration: none;
-  color: #005C46;
+  color: #1C6E5C;
 }
 
 .activities__date {
-  color: #4BB69E;
+  color: #378F7B;
   margin-bottom: .6em;
 }
 
@@ -1221,7 +982,7 @@ label {
 }
 
 .activities__all {
-  color: #4BB69E;
+  color: #378F7B;
   text-decoration: none;
 }
 
@@ -1265,7 +1026,7 @@ label {
 }
 
 .meta-nav, .post-title {
-  color: #4BB69E;
+  color: #378F7B;
   text-decoration: none;
 }
 
@@ -1325,7 +1086,7 @@ label {
 
 .team__member--function {
   text-align: center;
-  color: #005C46;
+  color: #1C6E5C;
   margin-bottom: 1.5em;
 }
 
@@ -1334,7 +1095,7 @@ label {
   display: block;
   text-align: center;
   margin-bottom: 1em;
-  color: #009875;
+  color: #378F7B;
   cursor: pointer;
 }
 
@@ -1402,4 +1163,73 @@ label {
     display: block;
     margin: 0 20% 3em;
   }
+}
+
+/* CSI
+ *
+ * /sass/components/frames.scss - styles for frames in header
+ *
+ * coded by Anne
+ * started at 30/08/2017
+ */
+.frame {
+  display: inline-block;
+  width: 33%;
+  vertical-align: middle;
+  padding: 3em 5.55%;
+  color: white;
+  min-height: 20em;
+  font-family: "montserratregular", "Corbel", "Lucida Grande", arial, sans-serif;
+}
+
+.frame__one {
+  background: #378F7B;
+}
+
+.frame__two {
+  background: #1C6E5C;
+}
+
+.frame__three {
+  background: #304131;
+}
+
+.frame__title {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+  font-family: "montserratlight", "Corbel", "Lucida Grande", arial, sans-serif;
+}
+
+.frame__content--item {
+  margin-bottom: 1em;
+}
+
+.frame__content--item p {
+  display: inline-block;
+}
+
+.frame__content--item i {
+  margin-right: 8px;
+}
+
+.frame__content--more {
+  margin-top: 2em;
+}
+
+/* CSI
+ *
+ * /sass/components/actu.scss - styles for actu in header
+ *
+ * coded by Anne
+ * started at 30/08/2017
+ */
+.actu__title {
+  font-family: "montserratmedium", "Corbel", "Lucida Grande", arial, sans-serif;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: .9em;
+}
+
+.actu__text p {
+  line-height: 1.5;
 }
