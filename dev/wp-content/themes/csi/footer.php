@@ -49,11 +49,5 @@
 	</div>
 
 </footer>
-<div class="content__hide"></div>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClfGzs3JWygOHF-J3GQqJke__tElojigQ"></script>
-<script src="https://use.fontawesome.com/81b9ac47bc.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/build/script/lancement.js'; ?>"></script><!-- permet le lancement de la fonction de scroll -->
-<script src="<?php echo get_template_directory_uri() . '/build/script/script.js';?>"></script>
-</div> <!--End container -->
 </body>
 </html>
