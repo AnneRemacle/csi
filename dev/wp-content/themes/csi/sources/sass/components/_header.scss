@@ -68,7 +68,7 @@
 	content: "";
 	font-family: "FontAwesome";
 	font-size: 1.5em;
-	color: $secondMiddleColor;
+	color: $middleColor;
 	display: inline-block;
 	margin-top: .2em;
 }
@@ -86,7 +86,7 @@
 
 .sub-menu {
 	display: none;
-	background: $secondMiddleColor;
+	background: $middleColor;
 	position: absolute;
 	min-width: 200px;
 	top: 3em;
@@ -105,7 +105,7 @@
 }
 
 .sub-menu > .menu-item:hover, .sub-menu > .menu-item:active, .sub-menu > .menu-item:focus {
-	background: $secondLightColor;
+	background: $middleColor;
 	transition: .3s ease;
 	cursor: pointer;
 }
@@ -125,7 +125,7 @@
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 
-	border-bottom: 10px solid $secondMiddleColor;
+	border-bottom: 10px solid $middleColor;
 	position: absolute;
 	top: -10px;
 	left: 90px;

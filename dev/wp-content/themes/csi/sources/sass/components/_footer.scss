@@ -74,8 +74,8 @@
     border-radius: 5px;
 }
 .button:hover {
-	background-color: $secondLightColor;
-    border: 1px solid $secondLightColor;
+	background-color: $middleColor;
+    border: 1px solid $middleColor;
 }
 
 .coord {
@@ -128,7 +128,7 @@
 }
 
 #menu-footer > .menu-item:hover, #menu-footer > .menu-item:focus, #menu-footer > .menu-item:active {
-	color: $secondLightColor;
+	color: $middleColor;
 }
 
 #menu-footer > .menu-item a {
@@ -136,7 +136,7 @@
 }
 
 #menu-footer > .menu-item a:hover, #menu-footer > .menu-item a:focus, #menu-footer > .menu-item a:active {
-	color: $secondLightColor;
+	color: $middleColor;
 }
 
 @media screen and (max-width: 1200px) {

@@ -27,7 +27,7 @@
          }
          &--name {
              text-align: center;
-             font-family: $title;
+             font-family: $lightText;
              font-size: 1.3em;
             margin-bottom: .6em;
          }
@@ -41,7 +41,7 @@
             display: block;
             text-align: center;
             margin-bottom: 1em;
-            color: $secondMiddleColor;
+            color: $middleColor;
             cursor: pointer;
          }
          &--link:hover {
