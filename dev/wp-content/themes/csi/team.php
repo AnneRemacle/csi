@@ -9,10 +9,12 @@ get_header();
  <section class="page clearfix">
  	<h2 class="sro">contenu principal du site</h2>
 
-    <section class="article clearfix team">
-		<h3 class="article__title" role="heading" aria-level="3"><?php the_title(); ?></h3>
+    <section class="section clearfix team">
+		<h3 class="section__title" role="heading" aria-level="3"><?php the_title(); ?></h3>
 
-		<?php the_content(); ?>
+		<div class="section__content">
+		    <?php the_content(); ?>
+		</div>
 
         <div class="team__list">
             <ul>
@@ -23,15 +25,13 @@ get_header();
                                 <?php $image = get_sub_field('photo'); ?>
                                 <img src="<?php echo $image['url']; ?>" alt="Portrait de <?php the_sub_field('nom'); ?>" class="team__member--portrait" />
                             </figure>
-                            <p class="team__member--name"><?php the_sub_field('nom'); ?></p>
-                            <p class="team__member--function"><?php the_sub_field('fonction'); ?></p>
-                            <div class="team__member--see">
-                                <span class="team__member--link">Voir son horaire</span>
+                            <div class="team__member--infos">
+                                <p class="team__member--name"><?php the_sub_field('nom'); ?></p>
+                                <p class="team__member--function"><?php the_sub_field('fonction'); ?></p>
                                 <div class="team__member--schedule">
                                     <?php the_sub_field('horaires'); ?>
                                 </div>
                             </div>
-
                         </li>
                     <?php endwhile; ?>
                 <?php endif; ?>

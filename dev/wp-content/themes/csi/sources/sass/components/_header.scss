@@ -5,11 +5,13 @@
  * coded by Anne
  * started at 29/11/2016
  */
-.container {
+.main {
 	overflow: hidden;
 }
 .header {
 	position: relative;
+	border-radius: 0px !important;
+	border: none;
 
 	&__up {
 		background: rgba( $lightColor, 0.3 );
@@ -24,6 +26,10 @@
 	}
 	&__hero {
 		margin-bottom: 15em;
+		width: 100%;
+		&--img {
+			width: 100%;
+		}
 	}
 	&__small-hero {
 		margin-bottom: 5em;
@@ -70,6 +76,7 @@
 	margin-left: 5%;
 	position: relative;
 	cursor: pointer;
+	font-size: .9em;
 }
 
 #menu-header > .menu-item a:hover, .menu > .menu-item a:active, .menu > .menu-item a:focus {
@@ -185,13 +192,30 @@
 		font-size: .9em;
 	}
 }
-@media screen and (max-width: 768px) { // TODO
+@media screen and (max-width: 768px) {
 	.header {
+		&__hero {
+			margin-bottom: 0;
+			
+		}
+
+		&__left {
+			width: 10%;
+			margin-left: 0;
+		}
 		&__logo {
-			width: 100%;
+			width: 120%;
+			padding: .2em 0 .2em 10%;
 		}
 		&__nav {
 			background: $lightColor;
+		}
+		&__frames {
+			padding: 0 8.5%;
+			position: relative;
+			top: 0em;
+			left: 0%;
+			width: 100%;
 		}
 		&__drop {
 			&--item {
@@ -206,9 +230,10 @@
 			top: 0;
 			right: 0;
 			font-size: 2em;
-			padding: 1em;
+			padding: .5em;
 			text-align: center;
 			cursor: pointer;
+			z-index: 5;
 
 		}
 		&__close {
@@ -224,7 +249,7 @@
 		background: $lightColor;
 		z-index:3;
 		min-height: 52em;
-		margin-top: 6em;
+		margin-top: 4.1em;
 	}
 
 	#menu-header > .menu-item {
@@ -301,7 +326,7 @@
 	    bottom: 0;
 	    right: 0;
 	    width: 250px;
-	    transform: translateX(250px);
+	    transform: translateX(270px);
 	    -webkit-transition: transform .3s ease-in;
 		background: $lightColor;
 
@@ -322,7 +347,7 @@
 	}
 	.header {
 		&__nav {
-			padding: 3em 0;
+			background: none;
 		}
 	}
 }

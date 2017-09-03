@@ -1,0 +1,14 @@
+.links {
+    &__item {
+        margin: 1em 0;
+
+        &--url {
+            text-decoration: none;
+            color: $lightColor;
+
+            &:hover {
+                color: $middleColor;
+            }
+        }
+    }
+}

@@ -12,15 +12,38 @@
 
      &__member {
          display: inline-block;
-         width: 22%;
+         width: 45%;
          vertical-align: top;
-         margin-right: 3%;
          margin-bottom: 3em;
          &--figure {
-             width: 100%;
-             height: 20em;
+             display: table-cell;
+             width: 45%;
+             height: 18em;
              overflow: hidden;
              margin-bottom: 1em;
+             vertical-align: middle;
+         }
+         &--infos {
+             display: table-cell;
+             vertical-align: middle;
+             width: 50%;
+             height: 18em;
+             background: $middleColor;
+             padding: 2em 3%;
+             color:white;
+             position: relative;
+         }
+         &--infos::before {
+             content:"";
+             width: 0;
+              height: 0;
+              border-top: 15px solid transparent;
+              border-bottom: 15px solid transparent;
+              display: block;
+              border-right:15px solid $middleColor;
+              position: absolute;
+              top: 1em;
+              left: -15px;
          }
          &--portrait {
             width: 100%;
@@ -33,7 +56,7 @@
          }
          &--function {
             text-align: center;
-            color: $darkColor;
+            color: $lightColor;
             margin-bottom: 1.5em;
          }
          &--link {
@@ -55,56 +78,57 @@
          }
          &--schedule {
             font-size: .9em;
-            display: none;
             transition: .3s ease;
          }
          &--schedule ul li {
              margin-bottom: .5em;
          }
      }
-
+    &__member:nth-child(odd) {
+        margin-right: 6%;
+    }
+    &__list {
+        margin: 2em 0;
+    }
  }
- .team__member:nth-child(4n+4) {
-     margin-right: 0;
- }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 2000px) {
     .team {
-        &__member {
-            &--figure {
-                height: 15em;
-            }
-        }
-    }
-}
-@media screen and (max-width: 1028px) {
-    .team {
-        &__member {
-            width: 30%;
-            &--figure {
-                height: 18em;
-            }
-        }
-    }
-    .team__member:nth-child(3n+3) {
-        margin-right: 0;
+        width: 60%;
     }
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
     .team {
-        &__member {
-            &--figure {
-                height: 15em;
-            }
-        }
-    }
-}
+        width: 80%;
 
-@media screen and (max-width: 768px) {
-    .team {
         &__member {
+            display: inline-block;
             width: 45%;
+            &--figure {
+                display: table-cell;
+                width: 45%;
+                vertical-align: middle;
+            }
+
+            &--portrait {
+               width: 140%;
+            }
+
+        }
+       &__member:nth-child(odd) {
+           margin-right: 6%;
+       }
+       &__list {
+           margin: 2em 0;
+       }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .team {
+        &__member {
+            width: 90%;
             margin-right: 3%;
             &--figure {
                 height: 15em;
@@ -115,11 +139,25 @@
 }
 @media screen and (max-width: 500px) {
     .team {
+        width: 90%;
+        margin: 0 auto;
+
         &__member {
             display: block;
-            margin: 0 20% 3em;
+            width: 100%;
+            margin-bottom: 3em;
+            &--figure {
+                display: block;
+                width: 100%;
+                height: 20em;
+                margin-bottom: 0em;
+            }
 
+            &--infos::before {
+                 border-right:15px solid transparent;
+            }
         }
+
     }
 
 }

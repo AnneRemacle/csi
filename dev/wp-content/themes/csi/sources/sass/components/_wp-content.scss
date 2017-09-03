@@ -5,23 +5,27 @@
  * coded by Anne
  * started at 29/11/2016
  */
+h4 {
+    color: $middleColor;    
+}
 
- .article > p {
+ .article div > p {
      margin-bottom: 1.5em;
  }
 
- .article > ul {
+ .article div > ul {
      width: 90%;
      margin-left: 10%;
      margin-bottom: 1.5em;
  }
 
- .article > ul > li {
+ .article div > ul > li {
      margin-bottom: .5em;
      position: relative;
+     line-height: 1.5;
  }
 
- .article > ul > li::before {
+ .article div > ul > li::before {
      content:'';
      font-family: 'Fontawesome';
      position: absolute;
@@ -31,23 +35,23 @@
      font-size: 1.2em;
  }
 
- .article a {
+ .article div a {
      color: $middleColor;
      text-decoration: none;
  }
 
- .article a:hover, .article a:active, .article a:focus {
+ .article div a:hover, .article div a:active, .article div a:focus {
      text-decoration: underline;
      cursor: pointer;
  }
 
- .article b {
+ .article div b {
      font-family: $mediumText;
 
  }
 
 
- .article > h4 {
+ .article div > h4 {
      font-size: 1.2em;
      margin-bottom: 1.2em;
      margin-top: 1.8em;

@@ -6,18 +6,18 @@
 get_header();
  ?>
 
-  <?php get_template_part( 'aside' ); ?>
-
  <section class="content clearfix">
  	<h2 class="sro">contenu principal du site</h2>
 
- 	<article class="article clearfix">
- 		<h3 class="article__title" role="heading" aria-level="3"><?php the_title(); ?></h3>
+ 	<article class="section clearfix">
+ 		<h3 class="section__title" role="heading" aria-level="3"><?php the_title(); ?></h3>
 
- 		<?php the_content(); ?>
+ 		<div class="section__content">
+ 		    <?php the_content(); ?>
+ 		</div>
  	</article>
 
-    <article class="last-activity">
+    <article class="last-activity section">
         <?php $posts = new WP_Query( [ 'orderby' => 'date', 'order' => 'DESC', 'showposts' => 1, 'post_type' => 'activite' ] ); ?>
         <?php if ( $posts -> have_posts() ):
             while ( $posts -> have_posts() ):
@@ -35,7 +35,7 @@ get_header();
         <?php wp_reset_query(); ?>
     </article>
 
-    <article class="activities">
+    <article class="activities section">
         <h4 class="activities__section">Toutes les activités</h4>
         <ul class="activities__list">
             <?php $posts = new WP_Query( [ 'orderby' => 'date', 'order' => 'DESC', 'post_type' => 'activite' ] ); ?>

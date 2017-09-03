@@ -54,3 +54,30 @@
         margin: 1em auto;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .news {
+        &__form {
+            width: 100%;
+            margin: 1em auto;
+        }
+
+        &__button {
+            width: 80%;
+            display: block;
+            position: relative;
+            left: 10%;
+            top: 1.6em;
+
+        }
+        &__submit {
+            border-radius: 5px;
+        }
+        &__small {
+            font-size: .9em;
+            text-align: center;
+            color: grey;
+            margin: 3em auto 0;
+        }
+    }
+}

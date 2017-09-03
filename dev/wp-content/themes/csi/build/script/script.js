@@ -1,4 +1,4 @@
-( function() {
+$( document ).ready( function() {
 
     "use strict";
 
@@ -44,7 +44,7 @@
                             "visibility": "on"
                         },
                         {
-                            "color": "#a5cf8f"
+                            "color": "#378F7B"
                         }
                     ]
                 },
@@ -74,7 +74,7 @@
                             "visibility": "on"
                         },
                         {
-                            "color": "#579735"
+                            "color": "#1C6E5C"
                         }
                     ]
                 },
@@ -86,7 +86,7 @@
                             "visibility": "on"
                         },
                         {
-                            "color": "#a5cf8f"
+                            "color": "#378F7B"
                         }
                     ]
                 },
@@ -98,7 +98,7 @@
                             "visibility": "on"
                         },
                         {
-                            "color": "#a5cf8f"
+                            "color": "#378F7B"
                         }
                     ]
                 },
@@ -110,7 +110,7 @@
                             "visibility": "on"
                         },
                         {
-                            "color": "#c4edae"
+                            "color": " #67CFB8"
                         }
                     ]
                 }
@@ -156,4 +156,4 @@
 
 	});
 
-} )();
+} );

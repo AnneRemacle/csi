@@ -7,14 +7,15 @@
  *
  */ get_header();
 ?>
-<?php get_template_part( 'aside' ); ?>
 <section class="content clearfix">
 	<h2 class="sro">contenu principal du site</h2>
 
-	<article class="article clearfix">
-		<h3 class="article__title" role="heading" aria-level="3"><?php the_title(); ?></h3>
+	<section class="section clearfix">
+		<h3 class="section__title" role="heading" aria-level="3"><?php the_title(); ?></h3>
 
-		<?php the_content(); ?>
+		<div class="section__content">
+			<?php the_content(); ?>
+		</div>
 
 		<ul class="links">
 			<?php if( have_rows('lien') ): ?>
@@ -26,8 +27,9 @@
 				</li>
 			<?php endwhile; endif; ?>
 		</ul>
-
-		<p class="article__subtitle">Numéros de téléphone utiles</p>
+	</section>
+	<section class="section">
+		<h3 class="section__title">Numéros de téléphone utiles</h3>
 
 		<ul class="links">
 			<?php if( have_rows('numeros') ): ?>
@@ -41,8 +43,8 @@
 
 			<?php endwhile; endif; ?>
 		</ul>
+	</section>
 
-	</article>
 
 </section>
 

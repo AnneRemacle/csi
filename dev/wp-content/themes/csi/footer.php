@@ -49,6 +49,7 @@
 			<!--End mc_embed_signup-->
 		</div>
 	</div>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClfGzs3JWygOHF-J3GQqJke__tElojigQ"></script>
 
 </footer>
 </body>

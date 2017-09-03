@@ -11,7 +11,7 @@
     margin: 5em auto;
     &__title {
         font-family: $lightText;
-        font-size: 2.25em;
+        font-size: 1.8em;
         text-align: center;
         margin-bottom: 1em;
     }
@@ -43,3 +43,48 @@
         }
     }
 }
+
+.colored {
+    background: rgba($lightContrastColor, .6);
+    padding: 5em 20%;
+
+    p {
+        margin-bottom: 1em;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .section {
+        width: 45%;
+    }
+}
+
+ @media screen and (max-width: 768px) {
+     .section{
+         width: 90%;
+
+         &__title {
+             font-size: 1.4em;
+         }
+         &__hero {
+
+             &--figure {
+                 overflow: hidden;
+                 max-height:15em;
+             }
+             &--img {
+                 width: 100%;
+             }
+             &--title {
+                 font-size: 1.4em;
+                 width: 90%;
+                 left: 5%;
+             }
+         }
+     }
+
+     .colored {
+         padding: 3em 5%;
+     }
+ }

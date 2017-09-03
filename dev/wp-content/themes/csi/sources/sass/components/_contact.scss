@@ -25,6 +25,16 @@
     line-height: 1.5;
     margin-bottom: 8em;
 
+    .fa {
+        margin-right: 10px;
+    }
+
+    &__address {
+        p{
+            display: inline-block;
+        }
+    }
+
     &__name {
         font-family: $lightText;
         font-size: 2em;
@@ -116,4 +126,33 @@ label {
 .wpcf7-validation-errors {
     color: red;
     font-size: .8em;
+}
+
+@media screen and (max-width: 768px) {
+    .map {
+        height: 10em;
+       margin-top: -5.2em;
+        z-index: 1;
+    }
+
+   .contact {
+       width: 100%;
+       margin: 0em auto 2em;
+       z-index: 1;
+   }
+
+   .contact-form {
+       width: 90%;
+       margin: 0 auto;
+       font-size: 1.2em;
+       margin-bottom: 5em;
+   }
+
+   label {
+       margin-bottom: 2em;
+   }
+
+   .wpcf7-submit {
+       width: 50%;
+   }
 }

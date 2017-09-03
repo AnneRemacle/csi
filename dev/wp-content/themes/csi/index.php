@@ -16,7 +16,7 @@
 get_header();
  ?>
 
-<section class="content clearfix">
+<section class=" clearfix">
 	<h2 class="sro">Contenu principal du site</h2>
 
 	<section class="section">
