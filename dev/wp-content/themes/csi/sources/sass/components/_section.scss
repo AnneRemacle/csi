@@ -1,0 +1,45 @@
+/* CSI
+ *
+ * /sass/components/index.scss - styles for index page
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+
+.section {
+    width: 55%;
+    margin: 5em auto;
+    &__title {
+        font-family: $lightText;
+        font-size: 2.25em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    &__content {
+        p {
+            line-height: 1.5;
+        }
+    }
+
+    &__hero {
+        width: 100%;
+        position: relative;
+
+        &--figure {
+            overflow: hidden;
+            max-height:25em;
+        }
+        &--img {
+            width: 100%;
+        }
+        &--title {
+            font-size: 2.25em;
+            position: absolute;
+            width: 50%;
+            left: 25%;
+            top: 5em;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}

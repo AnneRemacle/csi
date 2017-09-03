@@ -52,55 +52,61 @@
 				</nav>
 			</div>
 
-			<figure class="header__hero">
-				<img src="<?php echo get_template_directory_uri() . '/build/assets/images/hero.jpg';?>" alt="" class="header__hero--img"/>
-			</figure>
+			<?php if( is_front_page() ): ?>
+				<figure class="header__hero">
+					<img src="<?php echo get_template_directory_uri() . '/build/assets/images/hero.jpg';?>" alt="" class="header__hero--img"/>
+				</figure>
 
-			<div class="header__frames">
-				<div class="frame frame__one">
-					<p class="frame__title">Heures d'ouverture</p>
-					<ul class="frame__content">
-						<?php if( have_rows('heures', 'options') ): ?>
-							<?php while ( have_rows('heures', 'options') ) : the_row(); ?>
-								<li class="frame__content--item">
-									<span><?php the_sub_field('jour'); ?></span>&nbsp;: <span><?php the_sub_field('heures'); ?></span>
-								</li>
-							<?php endwhile; ?>
-						<?php endif; ?>
-					</ul>
-					<div class="frame__content--more"><?php the_field('complement', 'options'); ?></div>
-				</div><!--
-				--><div class="frame frame__two">
-					<p class="frame__title">CSI Angleur</p>
-					<div class="frame__content">
-						<div class="frame__content--item">
-							<i class="fa fa-envelope icon"></i><?php the_field('adresse', 'options'); ?>
-						</div>
-						<div class="frame__content--item">
-							<i class="fa fa-phone icon"></i><?php the_field('telephone', 'options'); ?>
-						</div>
-						<div class="frame__content--item">
-							<i class="fa fa-paper-plane icon"></i><?php the_field('email', 'options'); ?>
-						</div>
-					</div>
-				</div><!--
-				--><div class="frame frame__three">
-					<p class="frame__title">Dernières news</p>
-					<?php $posts = new WP_Query( [ 'post_type' => 'actualite', 'number' => 1, 'order' => 'DESC' ] ); ?>
-						<?php if ( $posts -> have_posts() ):
-							while ( $posts -> have_posts() ):
-								$posts -> the_post(); ?>
-
-							<div class="frame__content actu">
-								<date class="actu__title"><?php the_date( 'l j F' ); ?></date>
-								<p class="actu__text">
-									<?php the_content(); ?>
-								</p>
+				<div class="header__frames">
+					<div class="frame frame__one">
+						<p class="frame__title">Heures d'ouverture</p>
+						<ul class="frame__content">
+							<?php if( have_rows('heures', 'options') ): ?>
+								<?php while ( have_rows('heures', 'options') ) : the_row(); ?>
+									<li class="frame__content--item">
+										<span><?php the_sub_field('jour'); ?></span>&nbsp;: <span><?php the_sub_field('heures'); ?></span>
+									</li>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</ul>
+						<div class="frame__content--more"><?php the_field('complement', 'options'); ?></div>
+					</div><!--
+					--><div class="frame frame__two">
+						<p class="frame__title">CSI Angleur</p>
+						<div class="frame__content">
+							<div class="frame__content--item">
+								<i class="fa fa-envelope icon"></i><?php the_field('adresse', 'options'); ?>
 							</div>
+							<div class="frame__content--item">
+								<i class="fa fa-phone icon"></i><?php the_field('telephone', 'options'); ?>
+							</div>
+							<div class="frame__content--item">
+								<i class="fa fa-paper-plane icon"></i><?php the_field('email', 'options'); ?>
+							</div>
+						</div>
+					</div><!--
+					--><div class="frame frame__three">
+						<p class="frame__title">Dernières news</p>
+						<?php $posts = new WP_Query( [ 'post_type' => 'actualite', 'number' => 1, 'order' => 'DESC' ] ); ?>
+							<?php if ( $posts -> have_posts() ):
+								while ( $posts -> have_posts() ):
+									$posts -> the_post(); ?>
 
-						<?php endwhile; endif; ?>
-					<?php wp_reset_query(); ?>
+								<div class="frame__content actu">
+									<date class="actu__title"><?php the_date( 'l j F' ); ?></date>
+									<p class="actu__text">
+										<?php the_content(); ?>
+									</p>
+								</div>
+
+							<?php endwhile; endif; ?>
+						<?php wp_reset_query(); ?>
+					</div>
 				</div>
-			</div>
+			<?php else: ?>
+				<figure class="header__small-hero">
+					<img src="<?php echo get_template_directory_uri() . '/build/assets/images/small-hero.jpg';?>" alt="" class="header__hero--img"/>
+				</figure>
+			<?php endif; ?>
 
 		</header>

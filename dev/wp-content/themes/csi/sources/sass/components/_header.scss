@@ -10,7 +10,6 @@
 }
 .header {
 	position: relative;
-	margin-bottom: 15em;
 
 	&__up {
 		background: rgba( $lightColor, 0.3 );
@@ -22,6 +21,12 @@
 		padding: 1em 0;
 		display: inline-block;
 		vertical-align: middle;
+	}
+	&__hero {
+		margin-bottom: 15em;
+	}
+	&__small-hero {
+		margin-bottom: 5em;
 	}
 
 	&__logo {

@@ -8,7 +8,7 @@
 
 .footer {
 	clear: both;
-	background: $lightColor;
+	background: rgba($lightColor, .6);
 
 	&__menu {
 		width: 80%;
@@ -18,15 +18,17 @@
 		background: $middleColor;
 		padding: 3em 10%;
 		display: table;
+		table-layout: fixed;
+		width: 100%;
 	}
 
 	&__column {
 		display: table-cell;
-		vertical-align: middle;
+		width: 50%;
 	}
 
 	&__news {
-		width: 30%;
+		width: 20%;
 		&--text {
 			display: block;
 			margin-bottom: 1em;
@@ -41,23 +43,24 @@
 	&__input {
 		width: 80%;
 		display: inline-block;
-		height: 2em;
+		height: 2.5em;
 		border: none;
 		padding:.5em;
 		border-radius: 5px;
 		border: 1px solid transparent;
+		vertical-align: middle;
 	}
 	&__input[placeholder] {
 		font-size: 1em;
 	}
 	&__input:focus {
 		outline: none;
-		border: 1px solid $middleColor;
+		border: 1px solid $lightColor;
 	}
 	&__button {
 		width: 10%;
 		display: inline-block;
-
+		vertical-align: middle;
 	}
 }
 
@@ -67,20 +70,31 @@
 
 .button {
 	width: 100%;
-    height: 3em;
-    background-color: $darkColor;
+	font-size: 1em;
+    height: 2.5em;
+    background-color: $lightColor;
     color: white;
-    border: 1px solid $darkColor;
+    border: 1px solid $lightColor;
     border-radius: 5px;
 }
 .button:hover {
-	background-color: $middleColor;
-    border: 1px solid $middleColor;
+	background-color: $darkColor;
+    border: 1px solid $darkColor;
 }
 
 .coord {
 	width: 20%;
 	line-height: 1.5;
+
+	.icon {
+		margin-right: 10px;
+		margin-bottom: 1em;
+	}
+	&__address {
+		p {
+			display: inline-block;
+		}
+	}
 }
 
 .menu-footer-container {

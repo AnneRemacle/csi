@@ -19,13 +19,15 @@
 	</nav>
 	<div class="footer__bottom">
 		<div class="footer__column coord">
-			<p class="coord__address">
-				<?php echo get_field('adresse', 'option'); ?>
+			<div class="coord__address">
+				<i class="fa fa-envelope icon"></i><?php echo get_field('adresse', 'option'); ?>
+			</div>
+			<p class="coord__data">
+				<i class="fa fa-phone icon"></i>Tél&nbsp;: <?php echo get_field('telephone', 'option'); ?>
 			</p>
-		</div>
-		<div class="footer__column coord">
-			<p class="coord__data">Tél&nbsp;: <?php echo get_field('telephone', 'option'); ?></p>
-			<p class="coord__data">Email&nbsp;: <?php echo get_field('email', 'option'); ?></p>
+			<p class="coord__data">
+				<i class="fa fa-paper-plane icon"></i>Email&nbsp;: <?php echo get_field('email', 'option'); ?>
+			</p>
 		</div>
 		<div class="footer__column footer__news">
 			<div class="footer__news--text">

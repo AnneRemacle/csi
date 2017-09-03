@@ -1,0 +1,56 @@
+/* CSI
+ *
+ * /sass/components/index.scss - styles for index page
+ *
+ * coded by Anne
+ * started at 29/11/2016
+ */
+
+.news {
+    &__form {
+        width: 80%;
+        margin: 2em auto;
+        position: relative;
+    }
+    &__label {
+        margin-bottom: .6em;
+    }
+    &__input {
+        width: 100%;
+        display: inline-block;
+        border: 1px solid grey;
+        height: 3em;
+        padding:.5em;
+        border-radius: 5px;
+    }
+    &__input[placeholder] {
+        font-size: 1em;
+    }
+    &__input:focus {
+        outline: none;
+        border: 1px solid $middleColor;
+    }
+    &__button {
+        width: 25%;
+        display: inline-block;
+        position: absolute;
+        right:0;
+        top: 1.6em;
+
+    }
+    &__submit {
+        font-size: 1em;
+        height: 3em;
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        width: 100%;
+        color: white;
+        background: $middleColor;
+    }
+    &__small {
+        font-size: .9em;
+        text-align: center;
+        color: grey;
+        margin: 1em auto;
+    }
+}
